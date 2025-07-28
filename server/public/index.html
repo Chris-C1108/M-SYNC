@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-SYNC 管理中心</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-sync-alt"></i> M-SYNC 管理中心</h1>
+                <p class="subtitle">跨设备消息同步服务</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="welcome-section">
+                <div class="card">
+                    <h2><i class="fas fa-home"></i> 欢迎使用 M-SYNC</h2>
+                    <p>M-SYNC 是一个强大的跨设备消息同步服务，支持桌面客户端、iOS快捷指令等多种接入方式。</p>
+                    
+                    <div class="action-buttons">
+                        <a href="/pages/login.html" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> 登录
+                        </a>
+                        <a href="/pages/register.html" class="btn btn-secondary">
+                            <i class="fas fa-user-plus"></i> 注册
+                        </a>
+                        <a href="/pages/tokens.html" class="btn btn-secondary">
+                            <i class="fas fa-key"></i> Token管理
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h3><i class="fas fa-star"></i> 主要功能</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-desktop"></i>
+                        <h4>桌面客户端</h4>
+                        <p>支持Windows、macOS、Linux系统托盘运行</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>iOS快捷指令</h4>
+                        <p>通过iOS快捷指令快速发送消息到其他设备</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-key"></i>
+                        <h4>Token管理</h4>
+                        <p>安全的访问令牌管理，支持多设备独立认证</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h4>实时同步</h4>
+                        <p>基于WebSocket的实时消息推送</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status-section">
+                <div class="card">
+                    <h3><i class="fas fa-heartbeat"></i> 服务状态</h3>
+                    <div class="status-grid">
+                        <div class="status-item">
+                            <span class="status-label">服务状态:</span>
+                            <span class="status-value" id="service-status">检查中...</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">数据库:</span>
+                            <span class="status-value" id="database-status">检查中...</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">WebSocket:</span>
+                            <span class="status-value" id="websocket-status">检查中...</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">版本:</span>
+                            <span class="status-value" id="version">1.0.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 M-SYNC. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载客户端 - M-SYNC</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><a href="/"><i class="fas fa-sync-alt"></i> M-SYNC</a></h1>
+                <p class="subtitle">客户端下载</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="download-section">
+                <div class="card">
+                    <h2><i class="fas fa-download"></i> 下载M-SYNC客户端</h2>
+                    <p>选择适合您操作系统的客户端版本：</p>
+
+                    <div class="download-grid">
+                        <div class="download-item">
+                            <div class="download-icon">
+                                <i class="fab fa-windows"></i>
+                            </div>
+                            <h3>Windows</h3>
+                            <p>支持 Windows 10/11</p>
+                            <div class="download-actions">
+                                <button class="btn btn-primary" onclick="downloadClient('windows')">
+                                    <i class="fas fa-download"></i> 下载 Windows 版
+                                </button>
+                                <small>版本 1.0.0 | 约 50MB</small>
+                            </div>
+                        </div>
+
+                        <div class="download-item">
+                            <div class="download-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <h3>macOS</h3>
+                            <p>支持 macOS 10.15+</p>
+                            <div class="download-actions">
+                                <button class="btn btn-primary" onclick="downloadClient('macos')">
+                                    <i class="fas fa-download"></i> 下载 macOS 版
+                                </button>
+                                <small>版本 1.0.0 | 约 45MB</small>
+                            </div>
+                        </div>
+
+                        <div class="download-item">
+                            <div class="download-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <h3>Linux</h3>
+                            <p>支持主流 Linux 发行版</p>
+                            <div class="download-actions">
+                                <button class="btn btn-primary" onclick="downloadClient('linux')">
+                                    <i class="fas fa-download"></i> 下载 Linux 版
+                                </button>
+                                <small>版本 1.0.0 | 约 40MB</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="source-code-section">
+                <div class="card">
+                    <h3><i class="fab fa-github"></i> 源代码</h3>
+                    <p>M-SYNC 是开源项目，您可以查看源代码或自行编译：</p>
+                    <div class="action-buttons">
+                        <a href="#" class="btn btn-secondary" target="_blank">
+                            <i class="fab fa-github"></i> GitHub 仓库
+                        </a>
+                        <a href="#" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-book"></i> 编译指南
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="installation-guide">
+                <div class="card">
+                    <h3><i class="fas fa-cog"></i> 安装和配置指南</h3>
+                    
+                    <div class="guide-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>下载客户端</h4>
+                                <p>选择适合您操作系统的客户端版本并下载</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>安装客户端</h4>
+                                <p>运行下载的安装程序，按照提示完成安装</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>获取访问令牌</h4>
+                                <p>在 <a href="/pages/tokens.html">Token管理页面</a> 创建一个桌面客户端专用的访问令牌</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>配置客户端</h4>
+                                <p>首次启动客户端时，它会自动打开浏览器进行配置，或者手动配置访问令牌</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h4>开始使用</h4>
+                                <p>配置完成后，客户端将在系统托盘中运行，右键托盘图标可以访问功能菜单</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="card">
+                    <h3><i class="fas fa-star"></i> 客户端功能特性</h3>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <i class="fas fa-eye-slash"></i>
+                            <h4>后台运行</h4>
+                            <p>在系统托盘中静默运行，不占用桌面空间</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <h4>实时同步</h4>
+                            <p>通过WebSocket实现毫秒级消息同步</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clipboard"></i>
+                            <h4>剪贴板集成</h4>
+                            <p>支持剪贴板内容快速发送和接收</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bell"></i>
+                            <h4>桌面通知</h4>
+                            <p>新消息到达时显示系统通知</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-globe"></i>
+                            <h4>浏览器集成</h4>
+                            <p>自动在默认浏览器中打开URL链接</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>安全可靠</h4>
+                            <p>基于Token的安全认证机制</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="system-requirements">
+                <div class="card">
+                    <h3><i class="fas fa-desktop"></i> 系统要求</h3>
+                    <div class="requirements-grid">
+                        <div class="requirement-item">
+                            <h4><i class="fab fa-windows"></i> Windows</h4>
+                            <ul>
+                                <li>Windows 10 或更高版本</li>
+                                <li>至少 100MB 可用磁盘空间</li>
+                                <li>网络连接</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-item">
+                            <h4><i class="fab fa-apple"></i> macOS</h4>
+                            <ul>
+                                <li>macOS 10.15 (Catalina) 或更高版本</li>
+                                <li>至少 100MB 可用磁盘空间</li>
+                                <li>网络连接</li>
+                            </ul>
+                        </div>
+                        <div class="requirement-item">
+                            <h4><i class="fab fa-linux"></i> Linux</h4>
+                            <ul>
+                                <li>Ubuntu 18.04+ / CentOS 7+ / 其他主流发行版</li>
+                                <li>至少 100MB 可用磁盘空间</li>
+                                <li>网络连接</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p><a href="/">&larr; 返回首页</a></p>
+        </footer>
+    </div>
+
+    <script src="/js/download.js"></script>
+</body>
+</html>

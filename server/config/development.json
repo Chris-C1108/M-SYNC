@@ -1,0 +1,24 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "database": {
+    "type": "sqlite",
+    "connectionString": "sqlite:./data/msync-dev.db",
+    "options": {
+      "logging": true
+    }
+  },
+  "redis": {
+    "enabled": false
+  },
+  "logging": {
+    "level": "debug",
+    "file": "./logs/app-dev.log"
+  },
+  "security": {
+    "cors": {
+      "origin": ["http://localhost:3000", "http://127.0.0.1:3000"]
+    }
+  }
+}

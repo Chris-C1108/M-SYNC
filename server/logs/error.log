@@ -1,0 +1,158 @@
+2025-07-28 13:06:19 [ERROR]: Failed to get current version: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 13:06:19 [ERROR]: Failed to get executed migrations: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 13:27:14 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 13:28:15 [ERROR]: Failed to create user: {"component":"Database"}
+2025-07-28 13:28:15 [ERROR]: User registration failed: {"component":"AuthenticationService","username":"testuser","email":"test@example.com","error":"require(...).getDatabase is not a function"}
+2025-07-28 13:28:15 [ERROR]: Registration failed {"component":"AuthenticationService","error":"require(...).getDatabase is not a function","username":"testuser"}
+2025-07-28 13:28:36 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 13:30:02 [ERROR]: Failed to create user: {"component":"Database"}
+2025-07-28 13:30:02 [ERROR]: User registration failed: {"component":"AuthenticationService","username":"testuser","email":"test@example.com","error":"require(...).getDatabase is not a function"}
+2025-07-28 13:30:02 [ERROR]: Registration failed {"component":"AuthenticationService","error":"require(...).getDatabase is not a function","username":"testuser"}
+2025-07-28 13:55:00 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 14:50:20 [ERROR]: Unhandled error occurred {"error":"Expected property name or '}' in JSON at position 1 (line 1 column 2)","path":"/api/v1/auth/register","method":"POST","ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (E:\coding\M-SYNC\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\coding\M-SYNC\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:238:16)
+    at done (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-07-28 14:50:38 [ERROR]: Failed to create user: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 14:50:38 [ERROR]: User registration failed: {"component":"AuthenticationService","username":"testuser2","email":"test2@example.com","error":"SQLITE_ERROR: no such table: users"}
+2025-07-28 14:50:38 [ERROR]: Registration failed {"component":"AuthenticationService","error":"SQLITE_ERROR: no such table: users","username":"testuser2"}
+2025-07-28 14:52:15 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 14:53:42 [ERROR]: Failed to create user: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 14:53:42 [ERROR]: User registration failed: {"component":"AuthenticationService","username":"testuser3","email":"test3@example.com","error":"SQLITE_ERROR: no such table: users"}
+2025-07-28 14:53:42 [ERROR]: Registration failed {"component":"AuthenticationService","error":"SQLITE_ERROR: no such table: users","username":"testuser3"}
+2025-07-28 15:14:51 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 15:36:26 [ERROR]: User login failed: {"component":"AuthenticationService","username":"invaliduser","error":"Invalid credentials"}
+2025-07-28 15:36:26 [ERROR]: Login failed {"component":"AuthenticationService","error":"Invalid credentials","username":"invaliduser"}
+2025-07-28 16:10:32 [ERROR]: User login failed: {"component":"AuthenticationService","username":"loadingi","error":"Invalid credentials"}
+2025-07-28 16:10:32 [ERROR]: Login failed {"component":"AuthenticationService","error":"Invalid credentials","username":"loadingi"}
+2025-07-28 16:22:00 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 16:27:58 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 16:29:46 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 16:35:16 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 16:38:10 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 17:22:00 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 17:43:00 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:05 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:10 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:15 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:20 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:25 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:30 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:35 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:43:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:46:13 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 17:46:52 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 17:55:06 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:55:11 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:55:16 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:55:21 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:55:26 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:55:56 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:01 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:06 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:11 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:16 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:21 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:26 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:31 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:36 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:56:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:07 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:12 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:17 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:22 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:27 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:32 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:37 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:42 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:47 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:52 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:57:57 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:03 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:21 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:26 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:31 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:36 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:46 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:51 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:58:56 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:01 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:06 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:11 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:24 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:29 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:34 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 17:59:55 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:00 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:05 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:10 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:15 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:20 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:25 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:30 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:35 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:00:56 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:02 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:07 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:12 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:17 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:22 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:27 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:01:32 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:09 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:14 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:19 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:24 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:29 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:34 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:39 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:44 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:49 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:05:54 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:06:00 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:06:05 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:06:10 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:06:15 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:07:36 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:07:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:07:46 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:07:51 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:07:56 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:08:01 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:08:06 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:08:11 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:08:17 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:12:34 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:12:43 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:12:55 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:00 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:05 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:10 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:15 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:13:55 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:14:00 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:14:05 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:14:10 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:14:15 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:14:20 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:16:57 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:17:44 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}

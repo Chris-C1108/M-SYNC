@@ -1,0 +1,54 @@
+{
+  "server": {
+    "port": "MSYNC_PORT",
+    "host": "MSYNC_HOST"
+  },
+  "database": {
+    "type": "MSYNC_DB_TYPE",
+    "connectionString": "MSYNC_DB_CONNECTION_STRING"
+  },
+  "redis": {
+    "enabled": {
+      "__name": "MSYNC_REDIS_ENABLED",
+      "__format": "boolean"
+    },
+    "url": "MSYNC_REDIS_URL"
+  },
+  "auth": {
+    "tokenExpiryDays": {
+      "__name": "MSYNC_TOKEN_EXPIRY_DAYS",
+      "__format": "number"
+    },
+    "bcryptRounds": {
+      "__name": "MSYNC_BCRYPT_ROUNDS", 
+      "__format": "number"
+    }
+  },
+  "security": {
+    "corsOrigin": "MSYNC_CORS_ORIGIN",
+    "rateLimit": {
+      "windowMs": {
+        "__name": "MSYNC_RATE_LIMIT_WINDOW",
+        "__format": "number"
+      },
+      "max": {
+        "__name": "MSYNC_RATE_LIMIT_MAX",
+        "__format": "number"
+      }
+    }
+  },
+  "websocket": {
+    "heartbeatInterval": {
+      "__name": "MSYNC_WS_HEARTBEAT_INTERVAL",
+      "__format": "number"
+    },
+    "connectionTimeout": {
+      "__name": "MSYNC_WS_CONNECTION_TIMEOUT",
+      "__format": "number"
+    }
+  },
+  "logging": {
+    "level": "MSYNC_LOG_LEVEL",
+    "file": "MSYNC_LOG_FILE"
+  }
+}

@@ -1,0 +1,62 @@
+2025-07-28 13:06:19 [INFO]: Starting database initialization... {"component":"Database"}
+2025-07-28 13:06:19 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync-dev.db"}
+2025-07-28 13:06:19 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync-dev.db"}
+2025-07-28 13:06:19 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 13:06:19 [INFO]: Database connection established {"component":"Database"}
+2025-07-28 13:06:19 [INFO]: Checking database status... {"component":"Database"}
+2025-07-28 13:06:19 [ERROR]: Failed to get current version: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 13:06:19 [ERROR]: Failed to get executed migrations: {"component":"Database","errno":1,"code":"SQLITE_ERROR","__augmented":true}
+2025-07-28 13:07:14 [INFO]: Starting database initialization... {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync-dev.db"}
+2025-07-28 13:07:14 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync-dev.db"}
+2025-07-28 13:07:14 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Database connection established {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Checking database status... {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Running pending migrations... {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Migration system initialized {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Found 3 pending migrations {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Executing migration: 001_create_users_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Migration completed: 001_create_users_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Executing migration: 002_create_access_tokens_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Migration completed: 002_create_access_tokens_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Executing migration: 003_create_messages_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Migration completed: 003_create_messages_table.sql {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: All migrations completed successfully {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Migrations completed successfully {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Validating database schema... {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Database schema validation passed {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Database initialization completed successfully {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Database connection closed {"component":"Database"}
+2025-07-28 13:07:14 [INFO]: Database connection closed {"component":"Database"}
+2025-07-28 13:15:42 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync-dev.db"}
+2025-07-28 13:15:42 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync-dev.db"}
+2025-07-28 13:15:42 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 13:15:42 [INFO]: Database connected successfully
+2025-07-28 13:15:42 [INFO]: Services initialized and registered successfully
+2025-07-28 13:15:42 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 13:15:42 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 13:15:42 [INFO]: WebSocket service initialized
+2025-07-28 13:15:42 [INFO]: Application initialized successfully
+2025-07-28 13:15:42 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 13:16:26 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync-dev.db"}
+2025-07-28 13:16:26 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync-dev.db"}
+2025-07-28 13:16:26 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 13:16:26 [INFO]: Database connected successfully
+2025-07-28 13:16:26 [INFO]: Services initialized and registered successfully
+2025-07-28 13:16:26 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 13:16:26 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 13:16:26 [INFO]: WebSocket service initialized
+2025-07-28 13:16:26 [INFO]: Application initialized successfully
+2025-07-28 13:16:26 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 14:51:05 [INFO]: Starting database initialization... {"component":"Database"}
+2025-07-28 14:51:05 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync-dev.db"}
+2025-07-28 14:51:05 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync-dev.db"}
+2025-07-28 14:51:05 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 14:51:05 [INFO]: Database connection established {"component":"Database"}
+2025-07-28 14:51:05 [INFO]: Checking database status... {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Database is up to date {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Validating database schema... {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Database schema validation passed {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Database initialization completed successfully {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Database connection closed {"component":"Database"}
+2025-07-28 14:51:06 [INFO]: Database connection closed {"component":"Database"}

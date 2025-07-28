@@ -1,0 +1,25 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "database": {
+    "type": "sqlite",
+    "connectionString": "sqlite::memory:",
+    "options": {
+      "logging": false
+    }
+  },
+  "redis": {
+    "enabled": false
+  },
+  "logging": {
+    "level": "error",
+    "file": "./logs/app-test.log"
+  },
+  "security": {
+    "rateLimit": {
+      "windowMs": 1000,
+      "max": 1000
+    }
+  }
+}

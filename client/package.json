@@ -1,0 +1,87 @@
+{
+  "name": "msync-desktop-subscriber",
+  "version": "1.0.0",
+  "description": "M-SYNC Desktop Message Subscriber - Cross-device message synchronization client",
+  "main": "src/index.js",
+  "bin": {
+    "msync-client": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "build": "pkg . --out-path dist/",
+    "install-service": "node scripts/service-install.js",
+    "uninstall-service": "node scripts/uninstall.js",
+    "setup": "node scripts/install.js"
+  },
+  "keywords": [
+    "message-subscriber",
+    "websocket-client",
+    "cross-device",
+    "synchronization",
+    "desktop-agent",
+    "clipboard",
+    "browser-launcher"
+  ],
+  "author": "M-SYNC Team",
+  "license": "MIT",
+  "dependencies": {
+    "clipboardy": "^3.0.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.7.0",
+    "node-notifier": "^10.0.1",
+    "node-schedule": "^2.1.1",
+    "open": "^9.1.0",
+    "systeminformation": "^5.21.20",
+    "systray2": "^2.0.4",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "pkg": "^5.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "win32",
+    "darwin",
+    "linux"
+  ],
+  "pkg": {
+    "scripts": "src/**/*.js",
+    "assets": [
+      "config/**/*",
+      "node_modules/node-notifier/vendor/**/*"
+    ],
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64",
+      "node18-linux-x64"
+    ],
+    "outputPath": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-sync/desktop-subscriber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-sync/desktop-subscriber/issues"
+  },
+  "homepage": "https://github.com/m-sync/desktop-subscriber#readme"
+}

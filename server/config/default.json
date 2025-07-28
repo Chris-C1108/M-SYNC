@@ -1,0 +1,54 @@
+{
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0",
+    "name": "M-SYNC Message Broker Service"
+  },
+  "database": {
+    "type": "sqlite",
+    "connectionString": "sqlite:./data/msync.db",
+    "options": {
+      "logging": false,
+      "pool": {
+        "max": 10,
+        "min": 0,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    }
+  },
+  "redis": {
+    "enabled": false,
+    "url": "redis://localhost:6379",
+    "options": {
+      "retryDelayOnFailover": 100,
+      "maxRetriesPerRequest": 3
+    }
+  },
+  "auth": {
+    "tokenExpiryDays": 30,
+    "bcryptRounds": 12
+  },
+  "websocket": {
+    "heartbeatInterval": 30000,
+    "connectionTimeout": 60000,
+    "maxConnections": 1000
+  },
+  "security": {
+    "cors": {
+      "origin": "*",
+      "credentials": true
+    },
+    "rateLimit": {
+      "windowMs": 60000,
+      "max": 100,
+      "message": "Too many requests from this IP"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/app.log",
+    "maxSize": "20m",
+    "maxFiles": "14d"
+  }
+}

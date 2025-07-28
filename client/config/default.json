@@ -1,0 +1,57 @@
+{
+  "brokerService": {
+    "wsEndpoint": "ws://localhost:3000/ws/subscribe",
+    "apiEndpoint": "http://localhost:3000",
+    "reconnectInterval": 5000,
+    "heartbeatInterval": 30000,
+    "connectionTimeout": 10000,
+    "maxReconnectAttempts": 10,
+    "verifySSL": false
+  },
+  "messageHandlers": {
+    "TEXT": "clipboard",
+    "CODE": "clipboard",
+    "URL": "browser"
+  },
+  "systemIntegration": {
+    "clipboard": {
+      "enabled": true,
+      "timeout": 1000
+    },
+    "browser": {
+      "enabled": true,
+      "timeout": 3000,
+      "defaultBrowser": true
+    },
+    "notifications": {
+      "enabled": true,
+      "timeout": 5000,
+      "sound": true,
+      "icon": "./assets/icon.png"
+    }
+  },
+  "logging": {
+    "level": "info",
+    "file": "./logs/subscriber.log",
+    "maxSize": "20m",
+    "maxFiles": 5,
+    "console": true
+  },
+  "application": {
+    "name": "M-SYNC Desktop Subscriber",
+    "version": "1.0.0",
+    "autoStart": true,
+    "minimizeToTray": true,
+    "startMinimized": false
+  },
+  "security": {
+    "allowedOrigins": ["*"],
+    "validateMessages": true,
+    "maxMessageSize": 1048576
+  },
+  "performance": {
+    "maxConcurrentHandlers": 10,
+    "messageQueueSize": 100,
+    "memoryThreshold": 100
+  }
+}

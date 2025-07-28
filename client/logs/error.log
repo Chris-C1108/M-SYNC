@@ -1,0 +1,171 @@
+2025-07-28 17:11:46 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:14:15 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:15:48 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:18:06 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:22:41 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:26:23 [ERROR] [TokenManager]: Failed to store token:
+2025-07-28 17:27:59 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:38:40 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:38:41 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/SystemNotifier'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
+2025-07-28 17:38:41 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:38:41 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:38:53 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:38:53 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/SystemNotifier'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
+2025-07-28 17:38:53 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:38:53 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:39:45 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:39:45 [ERROR] [TextMessageHandler]: Failed to initialize text message handler:
+2025-07-28 17:39:45 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"this.systemNotifier.initialize is not a function"}
+2025-07-28 17:39:45 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry:
+2025-07-28 17:39:45 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
+2025-07-28 17:40:30 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:40:31 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"URL","handlerType":"browser","error":"Cannot find module './UrlMessageHandler'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
+2025-07-28 17:40:31 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:40:31 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
+2025-07-28 17:40:31 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:40:31 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:41:45 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:41:45 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
+2025-07-28 17:41:45 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:41:45 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:42:15 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:42:15 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
+2025-07-28 17:42:15 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:42:15 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:42:55 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:42:55 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:42:55 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 17:42:55 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 17:42:55 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 17:52:55 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 17:55:06 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:55:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:55:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:55:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:55:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:55:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:55:55 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:55:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:31 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:56:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:07 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:57:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:37 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:42 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:47 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:52 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:57:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:03 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:20 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:58:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:31 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:46 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:58:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:24 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 17:59:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 17:59:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:20 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:25 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:35 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:00:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:02 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:01:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:02:59 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-28 18:05:08 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:05:09 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:14 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:19 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:39 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:44 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:49 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:05:54 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:06:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:06:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:06:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:06:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:07:36 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:07:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:07:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:07:46 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:07:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:07:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:08:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:08:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:08:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:08:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:09:24 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:12:34 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:12:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:12:39 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 18:12:43 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:12:43 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:12:47 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 18:12:54 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:12:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:19 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 18:13:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:13:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:13:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:14:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:14:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:14:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:14:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:14:20 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:16:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:16:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:02 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:20:02 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:37 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:20:42 [ERROR] [MessageSubscriberClient]: Reconnection failed:

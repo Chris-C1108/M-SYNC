@@ -1,0 +1,33 @@
+{
+  "server": {
+    "port": 3000
+  },
+  "database": {
+    "type": "postgresql",
+    "connectionString": "postgresql://user:pass@localhost:5432/msync",
+    "options": {
+      "logging": false,
+      "pool": {
+        "max": 20,
+        "min": 5
+      }
+    }
+  },
+  "redis": {
+    "enabled": true,
+    "url": "redis://localhost:6379"
+  },
+  "logging": {
+    "level": "warn",
+    "file": "./logs/app-prod.log"
+  },
+  "security": {
+    "cors": {
+      "origin": ["https://api.m-sync.com", "https://m-sync.com"]
+    },
+    "rateLimit": {
+      "windowMs": 60000,
+      "max": 200
+    }
+  }
+}

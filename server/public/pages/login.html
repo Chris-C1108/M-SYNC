@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - M-SYNC</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><a href="/"><i class="fas fa-sync-alt"></i> M-SYNC</a></h1>
+                <p class="subtitle">用户登录</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h2><i class="fas fa-sign-in-alt"></i> 登录账户</h2>
+                    
+                    <form id="login-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="username">
+                                <i class="fas fa-user"></i> 用户名
+                            </label>
+                            <input type="text" id="username" name="username" required 
+                                   placeholder="请输入用户名" autocomplete="username">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">
+                                <i class="fas fa-lock"></i> 密码
+                            </label>
+                            <input type="password" id="password" name="password" required 
+                                   placeholder="请输入密码" autocomplete="current-password">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="remember-me" name="rememberMe">
+                                <span class="checkmark"></span>
+                                记住我
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-sign-in-alt"></i> 登录
+                        </button>
+                    </form>
+
+                    <div class="auth-links">
+                        <p>还没有账户？ <a href="/pages/register.html">立即注册</a></p>
+                    </div>
+
+                    <div id="login-message" class="message" style="display: none;"></div>
+
+                    <!-- 登录进度指示器 -->
+                    <div id="login-progress" class="progress-indicator" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p class="progress-text">正在登录...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 客户端Token传递区域 -->
+            <div id="client-token-section" class="card" style="display: none;">
+                <h3><i class="fas fa-desktop"></i> 桌面客户端配置</h3>
+                <p>登录成功！请选择如何配置您的桌面客户端：</p>
+                
+                <div class="client-config-options">
+                    <button id="auto-config-btn" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> 自动配置客户端
+                    </button>
+                    <button id="manual-config-btn" class="btn btn-secondary">
+                        <i class="fas fa-copy"></i> 手动复制Token
+                    </button>
+                </div>
+
+                <div id="manual-token-display" style="display: none;">
+                    <div class="token-display">
+                        <label>访问令牌：</label>
+                        <div class="token-input-group">
+                            <input type="text" id="access-token" readonly>
+                            <button id="copy-token-btn" class="btn btn-small">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="help-text">
+                        请将此Token保存到客户端的 .env 文件中的 MSYNC_SUBSCRIBER_AUTH_TOKEN 字段。
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p><a href="/">&larr; 返回首页</a></p>
+        </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

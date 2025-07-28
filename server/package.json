@@ -1,0 +1,67 @@
+{
+  "name": "msync-message-broker-service",
+  "version": "1.0.0",
+  "description": "M-SYNC Message Broker Service - Real-time cross-device message synchronization server",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "init-db": "node scripts/init-database.js",
+    "migrate": "node scripts/init-database.js",
+    "seed": "node src/database/seeds/seed.js"
+  },
+  "keywords": [
+    "message-broker",
+    "websocket",
+    "real-time",
+    "cross-device",
+    "synchronization"
+  ],
+  "author": "M-SYNC Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "systray2": "^2.1.4",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-sync/message-broker-service.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-sync/message-broker-service/issues"
+  },
+  "homepage": "https://github.com/m-sync/message-broker-service#readme"
+}

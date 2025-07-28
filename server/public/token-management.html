@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-SYNC Token 管理</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #86868b;
+            font-size: 16px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #007aff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0056cc;
+        }
+
+        .btn-danger {
+            background: #ff3b30;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #d70015;
+        }
+
+        .btn-secondary {
+            background: #f2f2f7;
+            color: #1d1d1f;
+        }
+
+        .btn-secondary:hover {
+            background: #e5e5ea;
+        }
+
+        .token-grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        }
+
+        .token-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .token-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .token-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .token-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .token-type {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .type-desktop { background: #e3f2fd; color: #1976d2; }
+        .type-ios_shortcuts { background: #f3e5f5; color: #7b1fa2; }
+        .type-web { background: #e8f5e8; color: #388e3c; }
+        .type-mobile { background: #fff3e0; color: #f57c00; }
+
+        .token-info {
+            margin-bottom: 16px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .info-label {
+            color: #86868b;
+        }
+
+        .info-value {
+            font-weight: 500;
+        }
+
+        .status-active {
+            color: #34c759;
+        }
+
+        .status-expired {
+            color: #ff3b30;
+        }
+
+        .token-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .modal h2 {
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #1d1d1f;
+        }
+
+        .form-input, .form-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d2d2d7;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: #007aff;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+            margin-top: 24px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #86868b;
+        }
+
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .success {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Token 管理</h1>
+            <p>管理您的访问令牌，控制设备访问权限</p>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary" onclick="showCreateModal()">
+                ➕ 创建新Token
+            </button>
+            <button class="btn btn-secondary" onclick="refreshTokens()">
+                🔄 刷新列表
+            </button>
+            <button class="btn btn-danger" onclick="revokeAllTokens()">
+                🚫 撤销所有Token
+            </button>
+        </div>
+
+        <div id="error-message" class="error" style="display: none;"></div>
+        <div id="success-message" class="success" style="display: none;"></div>
+
+        <div id="loading" class="loading">
+            正在加载Token列表...
+        </div>
+
+        <div id="token-list" class="token-grid" style="display: none;">
+            <!-- Token卡片将在这里动态生成 -->
+        </div>
+    </div>
+
+    <!-- 创建Token模态框 -->
+    <div id="create-modal" class="modal">
+        <div class="modal-content">
+            <h2>创建新的访问令牌</h2>
+            <form id="create-form">
+                <div class="form-group">
+                    <label class="form-label">Token名称</label>
+                    <input type="text" class="form-input" id="token-name" 
+                           placeholder="例如：iPhone 主设备" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">设备类型</label>
+                    <select class="form-select" id="device-type" required>
+                        <option value="">请选择设备类型</option>
+                        <option value="desktop">桌面客户端</option>
+                        <option value="ios_shortcuts">iOS快捷指令</option>
+                        <option value="web">Web浏览器</option>
+                        <option value="mobile">移动应用</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">过期天数</label>
+                    <select class="form-select" id="expiry-days">
+                        <option value="7">7天</option>
+                        <option value="30" selected>30天</option>
+                        <option value="90">90天</option>
+                        <option value="365">365天</option>
+                        <option value="0">永不过期</option>
+                    </select>
+                </div>
+            </form>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="hideCreateModal()">取消</button>
+                <button class="btn btn-primary" onclick="createToken()">创建Token</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Token详情模态框 -->
+    <div id="token-modal" class="modal">
+        <div class="modal-content">
+            <h2>Token详情</h2>
+            <div id="token-details">
+                <!-- Token详情内容 -->
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" onclick="hideTokenModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 全局变量
+        let currentToken = localStorage.getItem('msync-token');
+        let tokens = [];
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!currentToken) {
+                showError('请先登录获取访问令牌');
+                return;
+            }
+            loadTokens();
+        });
+
+        // API调用函数
+        async function apiCall(endpoint, options = {}) {
+            const response = await fetch(`/api/v1${endpoint}`, {
+                headers: {
+                    'Authorization': `Bearer ${currentToken}`,
+                    'Content-Type': 'application/json',
+                    ...options.headers
+                },
+                ...options
+            });
+
+            const data = await response.json();
+            
+            if (!response.ok) {
+                throw new Error(data.message || '请求失败');
+            }
+            
+            return data;
+        }
+
+        // 加载Token列表
+        async function loadTokens() {
+            try {
+                showLoading();
+                const response = await apiCall('/tokens');
+                tokens = response.data.tokens;
+                renderTokens();
+                hideLoading();
+            } catch (error) {
+                hideLoading();
+                showError('加载Token列表失败: ' + error.message);
+            }
+        }
+
+        // 渲染Token列表
+        function renderTokens() {
+            const container = document.getElementById('token-list');
+            
+            if (tokens.length === 0) {
+                container.innerHTML = '<div class="loading">暂无Token，请创建一个新的访问令牌</div>';
+                container.style.display = 'block';
+                return;
+            }
+
+            container.innerHTML = tokens.map(token => `
+                <div class="token-card">
+                    <div class="token-header">
+                        <div>
+                            <div class="token-name">${token.tokenName}</div>
+                            <span class="token-type type-${token.deviceType}">${getDeviceTypeName(token.deviceType)}</span>
+                        </div>
+                        <div class="token-actions">
+                            <button class="btn btn-secondary btn-small" onclick="showTokenDetails('${token.id}')">
+                                详情
+                            </button>
+                            <button class="btn btn-danger btn-small" onclick="revokeToken('${token.id}')">
+                                撤销
+                            </button>
+                        </div>
+                    </div>
+                    <div class="token-info">
+                        <div class="info-row">
+                            <span class="info-label">状态</span>
+                            <span class="info-value ${token.isExpired ? 'status-expired' : 'status-active'}">
+                                ${token.isExpired ? '已过期' : '正常'}
+                            </span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">创建时间</span>
+                            <span class="info-value">${formatDate(token.createdAt)}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">最后使用</span>
+                            <span class="info-value">${token.lastUsedAt ? formatDate(token.lastUsedAt) : '从未使用'}</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">过期时间</span>
+                            <span class="info-value">${token.expiresAt ? formatDate(token.expiresAt) : '永不过期'}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            container.style.display = 'grid';
+        }
+
+        // 创建Token
+        async function createToken() {
+            try {
+                const tokenName = document.getElementById('token-name').value;
+                const deviceType = document.getElementById('device-type').value;
+                const expiryDays = parseInt(document.getElementById('expiry-days').value);
+
+                const response = await apiCall('/tokens', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        tokenName,
+                        deviceType,
+                        expiryDays: expiryDays === 0 ? null : expiryDays
+                    })
+                });
+
+                hideCreateModal();
+                showSuccess('Token创建成功！请复制并保存以下Token：\n\n' + response.data.token);
+                loadTokens();
+            } catch (error) {
+                showError('创建Token失败: ' + error.message);
+            }
+        }
+
+        // 撤销Token
+        async function revokeToken(tokenId) {
+            if (!confirm('确定要撤销这个Token吗？此操作不可撤销。')) {
+                return;
+            }
+
+            try {
+                await apiCall(`/tokens/${tokenId}`, { method: 'DELETE' });
+                showSuccess('Token已成功撤销');
+                loadTokens();
+            } catch (error) {
+                showError('撤销Token失败: ' + error.message);
+            }
+        }
+
+        // 撤销所有Token
+        async function revokeAllTokens() {
+            if (!confirm('确定要撤销所有Token吗？这将断开所有设备的连接，您需要重新登录。')) {
+                return;
+            }
+
+            try {
+                await apiCall('/tokens?excludeCurrent=true', { method: 'DELETE' });
+                showSuccess('所有Token已成功撤销（当前Token除外）');
+                loadTokens();
+            } catch (error) {
+                showError('撤销Token失败: ' + error.message);
+            }
+        }
+
+        // 工具函数
+        function getDeviceTypeName(type) {
+            const names = {
+                'desktop': '桌面',
+                'ios_shortcuts': 'iOS',
+                'web': '网页',
+                'mobile': '移动'
+            };
+            return names[type] || type;
+        }
+
+        function formatDate(dateString) {
+            return new Date(dateString).toLocaleString('zh-CN');
+        }
+
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('token-list').style.display = 'none';
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => errorDiv.style.display = 'none', 5000);
+        }
+
+        function showSuccess(message) {
+            const successDiv = document.getElementById('success-message');
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+            setTimeout(() => successDiv.style.display = 'none', 5000);
+        }
+
+        function showCreateModal() {
+            document.getElementById('create-modal').style.display = 'block';
+        }
+
+        function hideCreateModal() {
+            document.getElementById('create-modal').style.display = 'none';
+            document.getElementById('create-form').reset();
+        }
+
+        function refreshTokens() {
+            loadTokens();
+        }
+
+        // 点击模态框外部关闭
+        window.onclick = function(event) {
+            const modals = document.querySelectorAll('.modal');
+            modals.forEach(modal => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - M-SYNC</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><a href="/"><i class="fas fa-sync-alt"></i> M-SYNC</a></h1>
+                <p class="subtitle">用户注册</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="auth-container">
+                <div class="auth-card">
+                    <h2><i class="fas fa-user-plus"></i> 创建账户</h2>
+                    
+                    <form id="register-form" class="auth-form">
+                        <div class="form-group">
+                            <label for="username">
+                                <i class="fas fa-user"></i> 用户名
+                            </label>
+                            <input type="text" id="username" name="username" required 
+                                   placeholder="请输入用户名（3-20个字符）" 
+                                   minlength="3" maxlength="20" autocomplete="username">
+                            <small class="help-text">用户名只能包含字母、数字和下划线</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> 邮箱地址
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="请输入邮箱地址" autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">
+                                <i class="fas fa-lock"></i> 密码
+                            </label>
+                            <input type="password" id="password" name="password" required 
+                                   placeholder="请输入密码（至少8个字符）" 
+                                   minlength="8" autocomplete="new-password">
+                            <small class="help-text">密码应包含字母、数字和特殊字符</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">
+                                <i class="fas fa-lock"></i> 确认密码
+                            </label>
+                            <input type="password" id="confirm-password" name="confirmPassword" required 
+                                   placeholder="请再次输入密码" autocomplete="new-password">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="agree-terms" name="agreeTerms" required>
+                                <span class="checkmark"></span>
+                                我同意 <a href="#" target="_blank">服务条款</a> 和 <a href="#" target="_blank">隐私政策</a>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-user-plus"></i> 注册账户
+                        </button>
+                    </form>
+
+                    <div class="auth-links">
+                        <p>已有账户？ <a href="/pages/login.html">立即登录</a></p>
+                    </div>
+
+                    <div id="register-message" class="message" style="display: none;"></div>
+
+                    <!-- 注册进度指示器 -->
+                    <div id="register-progress" class="progress-indicator" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <p class="progress-text">正在注册账户...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 注册成功后的Token配置 -->
+            <div id="success-section" class="card" style="display: none;">
+                <h3><i class="fas fa-check-circle"></i> 注册成功！</h3>
+                <p>您的账户已创建成功，系统已为您生成了第一个访问令牌。</p>
+                
+                <div class="token-display">
+                    <label>访问令牌：</label>
+                    <div class="token-input-group">
+                        <input type="text" id="new-access-token" readonly>
+                        <button id="copy-new-token-btn" class="btn btn-small">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="next-steps">
+                    <h4>下一步操作：</h4>
+                    <ol>
+                        <li>复制上面的访问令牌</li>
+                        <li>下载并安装桌面客户端</li>
+                        <li>将令牌配置到客户端中</li>
+                        <li>开始使用M-SYNC服务</li>
+                    </ol>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="/pages/tokens.html" class="btn btn-primary">
+                        <i class="fas fa-key"></i> 管理Token
+                    </a>
+                    <a href="/pages/download.html" class="btn btn-secondary">
+                        <i class="fas fa-download"></i> 下载客户端
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p><a href="/">&larr; 返回首页</a></p>
+        </footer>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
