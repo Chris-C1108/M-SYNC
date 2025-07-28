@@ -169,3 +169,14 @@
 2025-07-28 18:20:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
 2025-07-28 18:20:37 [ERROR] [MessageSubscriberClient]: Reconnection failed:
 2025-07-28 18:20:42 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:04 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:21:04 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:09 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:14 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:19 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:21:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:

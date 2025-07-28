@@ -50,8 +50,14 @@ class WebSocketService {
    */
   async verifyClient(info) {
     try {
+      console.log('🔍 DEBUG: verifyClient called');
+      console.log('🔍 DEBUG: URL:', info.req.url);
+
       const query = url.parse(info.req.url, true).query;
       const authHeader = info.req.headers.authorization;
+
+      console.log('🔍 DEBUG: query:', query);
+      console.log('🔍 DEBUG: authHeader:', authHeader);
 
       let token = null;
 
@@ -103,8 +109,16 @@ class WebSocketService {
    */
   handleConnection(ws, req) {
     try {
+      console.log('🔍 DEBUG: handleConnection called');
+      console.log('🔍 DEBUG: req.user:', req.user);
+      console.log('🔍 DEBUG: req.accessToken:', req.accessToken);
+
       const user = req.user;
       const accessToken = req.accessToken;
+
+      if (!user || !accessToken) {
+        throw new Error(`Missing user or accessToken: user=${!!user}, accessToken=${!!accessToken}`);
+      }
 
       // 设置连接属性
       ws.userId = user.id;

@@ -156,3 +156,24 @@ SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 
 2025-07-28 18:14:20 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
 2025-07-28 18:16:57 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
 2025-07-28 18:17:44 [ERROR]: WebSocket server error: {"component":"WebSocket","code":"EADDRINUSE","errno":-4091,"syscall":"listen","address":"0.0.0.0","port":3000}
+2025-07-28 18:20:02 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:07 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:12 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:17 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:22 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:27 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:32 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:37 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:42 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:04 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:09 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:14 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:19 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:24 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:29 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:34 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:22:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:25:44 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}

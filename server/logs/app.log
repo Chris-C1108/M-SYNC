@@ -1289,3 +1289,80 @@ SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 
 2025-07-28 18:18:57 [INFO]: WebSocket service initialized
 2025-07-28 18:18:57 [INFO]: Application initialized successfully
 2025-07-28 18:18:57 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 18:19:35 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:20:01 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:20:02 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:02 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:02 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:07 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:07 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:07 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:12 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:12 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:12 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:17 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:17 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:17 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:22 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:22 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:22 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:27 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:27 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:27 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:32 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:32 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:32 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:37 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:37 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:37 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:20:42 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:20:42 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:20:42 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:04 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:21:04 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:04 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:04 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:09 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:09 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:09 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:14 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:14 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:14 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:19 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:19 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:19 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:24 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:24 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:24 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:29 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:29 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:29 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:34 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:34 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:34 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:40 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:40 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:40 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:45 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:45 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:45 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:21:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:21:50 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:21:50 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:22:41 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:22:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:22:41 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:25:09 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync.db"}
+2025-07-28 18:25:09 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync.db"}
+2025-07-28 18:25:09 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 18:25:09 [INFO]: Database connected successfully
+2025-07-28 18:25:09 [INFO]: Services initialized and registered successfully
+2025-07-28 18:25:09 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 18:25:09 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 18:25:09 [INFO]: WebSocket service initialized
+2025-07-28 18:25:09 [INFO]: Application initialized successfully
+2025-07-28 18:25:10 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 18:25:28 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:25:44 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:25:44 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:25:44 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
