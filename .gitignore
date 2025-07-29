@@ -1,3 +1,60 @@
+# 环境变量和敏感信息
 .env
+*.env.local
+*.env.production
+
+# 依赖目录
+node_modules/
 server/node_modules/
 client/node_modules/
+
+# 日志文件
+*.log
+logs/
+server/logs/
+client/logs/
+
+# 数据库文件
+*.sqlite
+*.sqlite3
+server/data/*.sqlite
+server/data/*.sqlite3
+
+# 配置文件（包含敏感信息）
+server/config/production.json
+client/config/token.json
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE和编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 构建输出
+dist/
+build/
+*.tgz
+
+# 测试覆盖率报告
+coverage/
+.nyc_output/
+
+# AI助手配置（可选，根据需要调整）
+.ai-rules/
+.augment/
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
