@@ -180,3 +180,60 @@
 2025-07-28 18:21:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
 2025-07-28 18:21:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
 2025-07-28 18:21:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:23 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:31:23 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:28 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:30 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:31:30 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:33 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:34 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-28 18:31:35 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:40 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:45 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:50 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:55 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:00 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:05 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:11 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:16 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: Max reconnect attempts reached, giving up
+2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:35:58 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:40:51 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:48:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:

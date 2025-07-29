@@ -23,13 +23,19 @@ class WebSocketConnectionManager extends EventEmitter {
     this.messageId = 0;
   }
 
-  async connect() {
+  async connect(authToken = null) {
     try {
       const wsEndpoint = this.config.get('brokerService.wsEndpoint');
-      const authToken = this.config.get('brokerService.authToken');
+
+      // 优先使用传入的Token，否则从配置获取
+      const token = authToken || this.config.get('brokerService.authToken');
+
+      if (!token) {
+        throw new Error('No authentication token available');
+      }
 
       // 在URL中包含Token进行认证
-      const wsUrl = `${wsEndpoint}?token=${encodeURIComponent(authToken)}`;
+      const wsUrl = `${wsEndpoint}?token=${encodeURIComponent(token)}`;
 
       logger.info('Connecting to WebSocket endpoint', { endpoint: wsEndpoint });
 
@@ -51,7 +57,11 @@ class WebSocketConnectionManager extends EventEmitter {
           const message = JSON.parse(data.toString());
           this.handleMessage(message);
         } catch (error) {
-          logger.error('Failed to parse WebSocket message:', error);
+          logger.error('Failed to parse WebSocket message:', {
+            error: error.message,
+            rawData: data.toString(),
+            dataLength: data.length
+          });
         }
       });
 

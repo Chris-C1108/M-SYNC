@@ -538,7 +538,9 @@ class MessageSubscriberClient extends EventEmitter {
       try {
         logger.info(`Connection attempt ${attempt}/${this.maxReconnectAttempts}`);
 
-        await this.connectionManager.connect();
+        // 确保有有效的Token
+        const token = await this.ensureValidToken();
+        await this.connectionManager.connect(token);
         this.reconnectAttempts = 0;
         logger.info('Connection established successfully');
         return;

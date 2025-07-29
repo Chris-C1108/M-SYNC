@@ -177,3 +177,36 @@ SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 
 2025-07-28 18:21:50 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
 2025-07-28 18:22:41 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
 2025-07-28 18:25:44 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:28:13 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:39:15 [ERROR]: Unhandled error occurred {"error":"Expected property name or '}' in JSON at position 1 (line 1 column 2)","path":"/api/v1/auth/login","method":"POST","ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (E:\coding\M-SYNC\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\coding\M-SYNC\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:238:16)
+    at done (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-07-28 18:42:07 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:42:07 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:42:32 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:42:32 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:43:01 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:43:01 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:45:35 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:45:35 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)

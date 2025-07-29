@@ -46,62 +46,58 @@ class WebSocketService {
   }
 
   /**
-   * 验证客户端连接
+   * 验证客户端连接 - 使用回调模式支持异步操作
    */
-  async verifyClient(info) {
-    try {
-      console.log('🔍 DEBUG: verifyClient called');
-      console.log('🔍 DEBUG: URL:', info.req.url);
+  verifyClient(info, callback) {
+    (async () => {
+      try {
+        const query = url.parse(info.req.url, true).query;
+        const authHeader = info.req.headers.authorization;
 
-      const query = url.parse(info.req.url, true).query;
-      const authHeader = info.req.headers.authorization;
+        let token = null;
 
-      console.log('🔍 DEBUG: query:', query);
-      console.log('🔍 DEBUG: authHeader:', authHeader);
+        // 1. 尝试从Authorization头获取token
+        if (authHeader && authHeader.startsWith('Bearer ')) {
+          token = authHeader.substring(7);
+        }
 
-      let token = null;
+        // 2. 尝试从查询参数获取token
+        if (!token && query.token) {
+          token = query.token;
+        }
 
-      // 1. 尝试从Authorization头获取token
-      if (authHeader && authHeader.startsWith('Bearer ')) {
-        token = authHeader.substring(7);
-      }
+        if (!token) {
+          logger.warn('WebSocket connection rejected: No token provided', {
+            origin: info.origin,
+            userAgent: info.req.headers['user-agent']
+          });
+          return callback(false);
+        }
 
-      // 2. 尝试从查询参数获取token
-      if (!token && query.token) {
-        token = query.token;
-      }
+        // 验证token
+        const { user, accessToken } = await this.authService.verifyToken(token);
 
-      if (!token) {
-        logger.warn('WebSocket connection rejected: No token provided', {
-          origin: info.origin,
-          userAgent: info.req.headers['user-agent']
+        // 将用户信息附加到请求对象
+        info.req.user = user;
+        info.req.accessToken = accessToken;
+
+        logger.info('WebSocket connection authorized', {
+          userId: user.id,
+          username: user.username,
+          tokenId: accessToken.id,
+          deviceType: accessToken.deviceType
         });
-        return false;
+
+        callback(true);
+
+      } catch (error) {
+        logger.warn('WebSocket connection rejected: Token verification failed', {
+          error: error.message,
+          origin: info.origin
+        });
+        callback(false);
       }
-
-      // 验证token
-      const { user, accessToken } = await this.authService.verifyToken(token);
-
-      // 将用户信息附加到请求对象
-      info.req.user = user;
-      info.req.accessToken = accessToken;
-
-      logger.info('WebSocket connection authorized', {
-        userId: user.id,
-        username: user.username,
-        tokenId: accessToken.id,
-        deviceType: accessToken.deviceType
-      });
-
-      return true;
-
-    } catch (error) {
-      logger.warn('WebSocket connection rejected: Token verification failed', {
-        error: error.message,
-        origin: info.origin
-      });
-      return false;
-    }
+    })();
   }
 
   /**
@@ -109,10 +105,6 @@ class WebSocketService {
    */
   handleConnection(ws, req) {
     try {
-      console.log('🔍 DEBUG: handleConnection called');
-      console.log('🔍 DEBUG: req.user:', req.user);
-      console.log('🔍 DEBUG: req.accessToken:', req.accessToken);
-
       const user = req.user;
       const accessToken = req.accessToken;
 

@@ -1366,3 +1366,189 @@ SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 
 2025-07-28 18:25:44 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
 2025-07-28 18:25:44 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
 2025-07-28 18:25:44 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:27:34 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync.db"}
+2025-07-28 18:27:34 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync.db"}
+2025-07-28 18:27:34 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 18:27:34 [INFO]: Database connected successfully
+2025-07-28 18:27:34 [INFO]: Services initialized and registered successfully
+2025-07-28 18:27:34 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 18:27:34 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 18:27:34 [INFO]: WebSocket service initialized
+2025-07-28 18:27:34 [INFO]: Application initialized successfully
+2025-07-28 18:27:34 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 18:28:01 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:28:13 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:28:13 [ERROR]: Failed to handle WebSocket connection: {"component":"WebSocket"}
+2025-07-28 18:28:13 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:30:15 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync.db"}
+2025-07-28 18:30:15 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync.db"}
+2025-07-28 18:30:15 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 18:30:15 [INFO]: Database connected successfully
+2025-07-28 18:30:15 [INFO]: Services initialized and registered successfully
+2025-07-28 18:30:15 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 18:30:15 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 18:30:15 [INFO]: WebSocket service initialized
+2025-07-28 18:30:15 [INFO]: Application initialized successfully
+2025-07-28 18:30:15 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 18:30:42 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:30:54 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:30:54 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:30:54 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}
+2025-07-28 18:31:04 [INFO]: WebSocket connection closed {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","code":1000,"reason":"Test completed","duration":10033,"totalConnections":0}
+2025-07-28 18:31:23 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:31:23 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:23 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:28 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:28 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:30 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:31:30 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:30 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:33 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:33 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:35 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:35 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:40 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:40 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:45 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:45 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:50 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:50 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:31:55 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:31:55 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:32:00 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:32:00 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:32:05 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:32:05 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:32:11 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:32:11 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:32:16 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:32:16 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:32:21 [WARN]: Token verification failed: {"0":"I","1":"n","2":"v","3":"a","4":"l","5":"i","6":"d","7":" ","8":"o","9":"r","10":" ","11":"e","12":"x","13":"p","14":"i","15":"r","16":"e","17":"d","18":" ","19":"t","20":"o","21":"k","22":"e","23":"n","component":"AuthenticationService"}
+2025-07-28 18:32:21 [WARN]: WebSocket connection rejected: Token verification failed {"component":"WebSocket","error":"Invalid or expired token"}
+2025-07-28 18:34:35 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:34:35 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:34:35 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:34:35 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}
+2025-07-28 18:35:24 [INFO]: WebSocket connection closed {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","code":1006,"reason":"","duration":48468,"totalConnections":0}
+2025-07-28 18:35:58 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:35:58 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:35:58 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}
+2025-07-28 18:36:03 [INFO]: WebSocket connection closed {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","code":1005,"reason":"","duration":4999,"totalConnections":0}
+2025-07-28 18:36:56 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:36:57 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:36:57 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:36:57 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}
+2025-07-28 18:37:43 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:37:43 [INFO]: GET /favicon.ico {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:37:55 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:37:55 [INFO]: GET /api/v1/tokens {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:37:55 [INFO]: Fetching user tokens {"component":"TokenController","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","includeInactive":false}
+2025-07-28 18:38:03 [INFO]: GET /pages/messages.html {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:39:15 [ERROR]: Unhandled error occurred {"error":"Expected property name or '}' in JSON at position 1 (line 1 column 2)","path":"/api/v1/auth/login","method":"POST","ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (E:\coding\M-SYNC\server\node_modules\body-parser\lib\types\json.js:92:19)
+    at E:\coding\M-SYNC\server\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:238:16)
+    at done (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (E:\coding\M-SYNC\server\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-07-28 18:39:25 [INFO]: POST /api/v1/auth/login {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:39:25 [INFO]: User login attempt {"component":"AuthenticationService","username":"loadingi"}
+2025-07-28 18:39:25 [INFO]: User login attempt {"component":"AuthenticationService","username":"loadingi","deviceType":"web"}
+2025-07-28 18:39:25 [INFO]: Last login updated {"component":"Database","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c"}
+2025-07-28 18:39:25 [INFO]: Creating new access token {"component":"Database","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","deviceType":"web","tokenName":"登录创建"}
+2025-07-28 18:39:25 [INFO]: Access token created successfully {"component":"Database","tokenId":"1708f12c-7a11-40ae-8b04-f3b7a91def2a","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","deviceType":"web"}
+2025-07-28 18:39:25 [INFO]: User login successful {"component":"AuthenticationService","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","username":"loadingi","tokenId":"1708f12c-7a11-40ae-8b04-f3b7a91def2a"}
+2025-07-28 18:39:25 [INFO]: User logged in successfully {"component":"AuthenticationService","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","username":"loadingi"}
+2025-07-28 18:39:36 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:39:36 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","messageType":"TEXT","contentLength":129}
+2025-07-28 18:39:36 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","tokenId":"1708f12c-7a11-40ae-8b04-f3b7a91def2a","messageType":"TEXT","contentLength":129}
+2025-07-28 18:39:36 [INFO]: Creating new message {"component":"Database","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","messageType":"TEXT","contentLength":129}
+2025-07-28 18:39:36 [INFO]: Message created successfully {"component":"Database","messageId":"16e138f8-d744-4876-be01-6deefafb36ec","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","messageType":"TEXT"}
+2025-07-28 18:39:36 [INFO]: Broadcasting message {"component":"MessageBrokerService","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","messageId":"16e138f8-d744-4876-be01-6deefafb36ec"}
+2025-07-28 18:39:36 [INFO]: Message broadcasted successfully {"component":"MessageBrokerService","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","messageId":"16e138f8-d744-4876-be01-6deefafb36ec","sentCount":0}
+2025-07-28 18:39:36 [INFO]: Message published successfully {"component":"MessageBrokerService","messageId":"16e138f8-d744-4876-be01-6deefafb36ec","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c","deliveredTo":0}
+2025-07-28 18:39:36 [INFO]: Message published successfully {"component":"MessageIngressGateway","messageId":"16e138f8-d744-4876-be01-6deefafb36ec","userId":"6cc2e553-3ba8-45dd-84b2-5bb357cd633c"}
+2025-07-28 18:40:32 [INFO]: GET /pages/messages.html {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:40:35 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:40:51 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:40:51 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":73}
+2025-07-28 18:40:51 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":73}
+2025-07-28 18:40:51 [INFO]: Creating new message {"component":"Database","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":73}
+2025-07-28 18:40:51 [INFO]: Message created successfully {"component":"Database","messageId":"c5f12781-bb96-4d67-b3ce-ba7f6afdcb25","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT"}
+2025-07-28 18:40:51 [INFO]: Broadcasting message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","messageId":"c5f12781-bb96-4d67-b3ce-ba7f6afdcb25"}
+2025-07-28 18:40:51 [INFO]: Message broadcasted successfully {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","messageId":"c5f12781-bb96-4d67-b3ce-ba7f6afdcb25","sentCount":1}
+2025-07-28 18:40:51 [INFO]: Message published successfully {"component":"MessageBrokerService","messageId":"c5f12781-bb96-4d67-b3ce-ba7f6afdcb25","userId":"407cb62c-d440-4142-890f-42023f735089","deliveredTo":1}
+2025-07-28 18:40:51 [INFO]: Message published successfully {"component":"MessageIngressGateway","messageId":"c5f12781-bb96-4d67-b3ce-ba7f6afdcb25","userId":"407cb62c-d440-4142-890f-42023f735089"}
+2025-07-28 18:42:07 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:42:07 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":73}
+2025-07-28 18:42:07 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":73}
+2025-07-28 18:42:07 [WARN]: Duplicate message detected {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","contentHash":"2ebc22fa77e36e17d4d69b3b6afa5aea402b5fcd80440f2862baa602e031cd19"}
+2025-07-28 18:42:07 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:42:07 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:42:21 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:42:32 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:42:32 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":73}
+2025-07-28 18:42:32 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":73}
+2025-07-28 18:42:32 [WARN]: Duplicate message detected {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","contentHash":"2ebc22fa77e36e17d4d69b3b6afa5aea402b5fcd80440f2862baa602e031cd19"}
+2025-07-28 18:42:32 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:42:32 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:43:01 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:43:01 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":73}
+2025-07-28 18:43:01 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":73}
+2025-07-28 18:43:01 [WARN]: Duplicate message detected {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","contentHash":"2ebc22fa77e36e17d4d69b3b6afa5aea402b5fcd80440f2862baa602e031cd19"}
+2025-07-28 18:43:01 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:43:01 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:43:18 [INFO]: WebSocket connection closed {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","code":1006,"reason":"","duration":381346,"totalConnections":0}
+2025-07-28 18:43:39 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:43:39 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:43:39 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:43:39 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}
+2025-07-28 18:44:21 [INFO]: WebSocket connection closed {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","code":1006,"reason":"","duration":41576,"totalConnections":0}
+2025-07-28 18:44:35 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:44:35 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":50}
+2025-07-28 18:44:35 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":50}
+2025-07-28 18:44:35 [INFO]: Creating new message {"component":"Database","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":50}
+2025-07-28 18:44:35 [INFO]: Message created successfully {"component":"Database","messageId":"3c033b1d-9b42-4436-8f4a-9bf26b487b71","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT"}
+2025-07-28 18:44:35 [INFO]: Broadcasting message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","messageId":"3c033b1d-9b42-4436-8f4a-9bf26b487b71"}
+2025-07-28 18:44:35 [INFO]: Message broadcasted successfully {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","messageId":"3c033b1d-9b42-4436-8f4a-9bf26b487b71","sentCount":0}
+2025-07-28 18:44:35 [INFO]: Message published successfully {"component":"MessageBrokerService","messageId":"3c033b1d-9b42-4436-8f4a-9bf26b487b71","userId":"407cb62c-d440-4142-890f-42023f735089","deliveredTo":0}
+2025-07-28 18:44:35 [INFO]: Message published successfully {"component":"MessageIngressGateway","messageId":"3c033b1d-9b42-4436-8f4a-9bf26b487b71","userId":"407cb62c-d440-4142-890f-42023f735089"}
+2025-07-28 18:44:43 [INFO]: GET /pages/messages.html {"ip":"127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0"}
+2025-07-28 18:45:26 [INFO]: GET /api/v1/health {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:45:35 [INFO]: POST /api/v1/messages/publish {"ip":"127.0.0.1","userAgent":"curl/8.13.0"}
+2025-07-28 18:45:35 [INFO]: Publishing message {"component":"MessageIngressGateway","userId":"407cb62c-d440-4142-890f-42023f735089","messageType":"TEXT","contentLength":50}
+2025-07-28 18:45:35 [INFO]: Publishing message {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","messageType":"TEXT","contentLength":50}
+2025-07-28 18:45:35 [WARN]: Duplicate message detected {"component":"MessageBrokerService","userId":"407cb62c-d440-4142-890f-42023f735089","contentHash":"4251612692c6a3e55d927da094922197e0859006b0adad388f0ce0398069167d"}
+2025-07-28 18:45:35 [ERROR]: Failed to publish message: {"component":"MessageBrokerService"}
+2025-07-28 18:45:35 [ERROR]: Failed to publish message {"component":"MessageIngressGateway","error":"Duplicate message detected within time window","userId":"407cb62c-d440-4142-890f-42023f735089"}
+Error: Duplicate message detected within time window
+    at MessageBrokerService.publishMessage (E:\coding\M-SYNC\server\src\services\MessageBrokerService.js:43:15)
+    at async MessageController.publishMessage (E:\coding\M-SYNC\server\src\controllers\MessageController.js:38:22)
+2025-07-28 18:46:42 [INFO]: Connecting to database {"component":"Database","type":"sqlite","connectionString":"sqlite:./data/msync.db"}
+2025-07-28 18:46:42 [INFO]: SQLite database connected {"component":"Database","path":"E:\\coding\\M-SYNC\\server\\data\\msync.db"}
+2025-07-28 18:46:42 [INFO]: Database connected successfully {"component":"Database"}
+2025-07-28 18:46:42 [INFO]: Database connected successfully
+2025-07-28 18:46:42 [INFO]: Services initialized and registered successfully
+2025-07-28 18:46:42 [INFO]: WebSocket heartbeat started {"component":"WebSocket","interval":30000}
+2025-07-28 18:46:42 [INFO]: WebSocket server initialized {"component":"WebSocket","path":"/ws/subscribe","heartbeatInterval":30000}
+2025-07-28 18:46:42 [INFO]: WebSocket service initialized
+2025-07-28 18:46:42 [INFO]: Application initialized successfully
+2025-07-28 18:46:42 [INFO]: Server started on 0.0.0.0:3000
+2025-07-28 18:47:42 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:47:42 [INFO]: GET /api/v1/tokens/current {"ip":"127.0.0.1","userAgent":"node-fetch/1.0 (+https://github.com/bitinn/node-fetch)"}
+2025-07-28 18:47:42 [INFO]: WebSocket connection authorized {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop"}
+2025-07-28 18:47:42 [INFO]: WebSocket connection established {"component":"WebSocket","userId":"407cb62c-d440-4142-890f-42023f735089","username":"testuserpw2","tokenId":"1b5d6be4-a2a7-482b-9401-ab1836b2f097","deviceType":"desktop","totalConnections":1}

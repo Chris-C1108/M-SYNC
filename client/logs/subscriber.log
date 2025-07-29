@@ -1971,3 +1971,359 @@
 2025-07-28 18:21:50 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 1 in 5000ms
 2025-07-28 18:22:41 [INFO] [TokenManager]: Token manager initialized
 2025-07-28 18:25:44 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:28:13 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:30:54 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:31:23 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:31:23 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:31:23 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:31:23 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:31:23 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:31:23 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:31:23 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:23 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:31:23 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:31:23 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:31:23 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:31:23 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:31:23 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:23 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:31:23 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:31:23 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:23 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:23 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:31:23 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:31:23 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:31:23 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:31:23 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:23 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:23 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:23 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:23 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 1 in 5000ms
+2025-07-28 18:31:28 [INFO] [MessageSubscriberClient]: Attempting to reconnect (1)
+2025-07-28 18:31:28 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:28 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:28 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:28 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:28 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:28 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 2 in 5000ms
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:31:30 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:31:30 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:31:30 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:31:30 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:31:30 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:31:30 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:31:30 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:30 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:31:30 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:31:30 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:31:30 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:31:30 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:31:30 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:30 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:31:30 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:31:30 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:31:30 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:31:30 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:31:30 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:31:30 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:31:30 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:31:30 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:30 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:30 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:30 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:30 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 1 in 5000ms
+2025-07-28 18:31:33 [INFO] [MessageSubscriberClient]: Attempting to reconnect (2)
+2025-07-28 18:31:33 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:33 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:33 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:33 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:33 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:33 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 3 in 5000ms
+2025-07-28 18:31:34 [INFO] [MessageSubscriberClient]: Stopping message subscriber client
+2025-07-28 18:31:35 [INFO] [MessageSubscriberClient]: Attempting to reconnect (1)
+2025-07-28 18:31:35 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:35 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:35 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:35 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:35 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:35 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 2 in 5000ms
+2025-07-28 18:31:40 [INFO] [MessageSubscriberClient]: Attempting to reconnect (2)
+2025-07-28 18:31:40 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:40 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:40 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:40 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:40 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:40 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 3 in 5000ms
+2025-07-28 18:31:45 [INFO] [MessageSubscriberClient]: Attempting to reconnect (3)
+2025-07-28 18:31:45 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:45 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:45 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:45 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:45 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:45 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 4 in 5000ms
+2025-07-28 18:31:50 [INFO] [MessageSubscriberClient]: Attempting to reconnect (4)
+2025-07-28 18:31:50 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:50 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:50 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:50 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:50 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:50 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 5 in 5000ms
+2025-07-28 18:31:55 [INFO] [MessageSubscriberClient]: Attempting to reconnect (5)
+2025-07-28 18:31:55 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:31:55 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:31:55 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:31:55 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:31:55 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:31:55 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 6 in 5000ms
+2025-07-28 18:32:00 [INFO] [MessageSubscriberClient]: Attempting to reconnect (6)
+2025-07-28 18:32:00 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:32:00 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:00 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:32:00 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:32:00 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:00 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 7 in 5000ms
+2025-07-28 18:32:05 [INFO] [MessageSubscriberClient]: Attempting to reconnect (7)
+2025-07-28 18:32:05 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:32:05 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:05 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:32:05 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:32:05 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:05 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 8 in 5000ms
+2025-07-28 18:32:10 [INFO] [MessageSubscriberClient]: Attempting to reconnect (8)
+2025-07-28 18:32:10 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:32:11 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:11 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:32:11 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:32:11 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:11 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 9 in 5000ms
+2025-07-28 18:32:16 [INFO] [MessageSubscriberClient]: Attempting to reconnect (9)
+2025-07-28 18:32:16 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:32:16 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:16 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:32:16 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:32:16 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:16 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 10 in 5000ms
+2025-07-28 18:32:21 [INFO] [MessageSubscriberClient]: Attempting to reconnect (10)
+2025-07-28 18:32:21 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: WebSocket error:
+2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
+2025-07-28 18:32:21 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:32:21 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:32:21 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: Max reconnect attempts reached, giving up
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:34:35 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:34:35 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:34:35 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:34:35 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:34:35 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:34:35 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:34:35 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:34:35 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:34:35 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:34:35 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:34:35 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:34:35 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:34:35 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:34:35 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:34:35 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:34:35 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:34:35 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:34:35 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:34:35 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:34:35 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:34:35 [INFO] [WebSocketConnectionManager]: WebSocket connection established
+2025-07-28 18:34:35 [INFO] [MessageSubscriberClient]: WebSocket connection established
+2025-07-28 18:34:35 [INFO] [WebSocketConnectionManager]: Connection established confirmation received
+2025-07-28 18:35:58 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:35:58 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:35:58 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:35:58 [INFO] [WebSocketConnectionManager]: WebSocket connection established
+2025-07-28 18:35:58 [INFO] [WebSocketConnectionManager]: Connection established confirmation received
+2025-07-28 18:36:03 [INFO] [WebSocketConnectionManager]: WebSocket disconnected
+2025-07-28 18:36:56 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:36:56 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:36:56 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:36:57 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:36:57 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:36:57 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:36:57 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:36:57 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:36:57 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:36:57 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:36:57 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:36:57 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:36:57 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:36:57 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:36:57 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:36:57 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:36:57 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:36:57 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:36:57 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:36:57 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:36:57 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:36:57 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:36:57 [INFO] [WebSocketConnectionManager]: WebSocket connection established
+2025-07-28 18:36:57 [INFO] [MessageSubscriberClient]: WebSocket connection established
+2025-07-28 18:36:57 [INFO] [WebSocketConnectionManager]: Connection established confirmation received
+2025-07-28 18:40:51 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-28 18:41:57 [WARN] [MessageSubscriberClient]: Token info not available, skipping expiration check
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:43:39 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:43:39 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:43:39 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:43:39 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:43:39 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:43:39 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:43:39 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:43:39 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:43:39 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:43:39 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:43:39 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:43:39 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:43:39 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:43:39 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:43:39 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:43:39 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:43:39 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:43:39 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:43:39 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:43:39 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:43:39 [INFO] [WebSocketConnectionManager]: WebSocket connection established
+2025-07-28 18:43:39 [INFO] [MessageSubscriberClient]: WebSocket connection established
+2025-07-28 18:43:39 [INFO] [WebSocketConnectionManager]: Connection established confirmation received
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Starting message subscriber client
+2025-07-28 18:47:42 [INFO] [TokenManager]: Token manager initialized
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Checking authentication token...
+2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:47:42 [INFO] [MessageHandlerRegistry]: Initializing message handler registry
+2025-07-28 18:47:42 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:47:42 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:47:42 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:47:42 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:47:42 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:47:42 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"TEXT","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:47:42 [INFO] [TextMessageHandler]: Initializing text message handler
+2025-07-28 18:47:42 [INFO] [ClipboardManager]: Initializing clipboard manager
+2025-07-28 18:47:42 [WARN] [ClipboardManager]: Clipboard access failed: {"0":"c","1":"l","2":"i","3":"p","4":"b","5":"o","6":"a","7":"r","8":"d","9":"y","10":".","11":"r","12":"e","13":"a","14":"d","15":" ","16":"i","17":"s","18":" ","19":"n","20":"o","21":"t","22":" ","23":"a","24":" ","25":"f","26":"u","27":"n","28":"c","29":"t","30":"i","31":"o","32":"n"}
+2025-07-28 18:47:42 [WARN] [ClipboardManager]: Clipboard not available, manager initialized in disabled mode
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:47:42 [INFO] [TextMessageHandler]: Text message handler initialized
+2025-07-28 18:47:42 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"CODE","handlerType":"clipboard","handlerClass":"TextMessageHandler"}
+2025-07-28 18:47:42 [INFO] [UrlMessageHandler]: Initializing URL message handler
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: Initializing system notifier
+2025-07-28 18:47:42 [INFO] [SystemNotifier]: System notifier initialized successfully
+2025-07-28 18:47:42 [INFO] [UrlMessageHandler]: URL message handler initialized
+2025-07-28 18:47:42 [INFO] [MessageHandlerRegistry]: Handler registered {"messageType":"URL","handlerType":"browser","handlerClass":"UrlMessageHandler"}
+2025-07-28 18:47:42 [INFO] [MessageHandlerRegistry]: Message handler registry initialized {"registeredHandlers":["TEXT","CODE","URL"]}
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Connection attempt 1/10
+2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Valid token obtained successfully
+2025-07-28 18:47:42 [INFO] [WebSocketConnectionManager]: Connecting to WebSocket endpoint {"endpoint":"ws://localhost:3000/ws/subscribe"}
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Connection established successfully
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Token monitoring started {"intervalMs":300000}
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: Message subscriber client started successfully
+2025-07-28 18:47:42 [INFO] [WebSocketConnectionManager]: WebSocket connection established
+2025-07-28 18:47:42 [INFO] [MessageSubscriberClient]: WebSocket connection established
+2025-07-28 18:47:42 [INFO] [WebSocketConnectionManager]: Connection established confirmation received
+2025-07-28 18:48:15 [WARN] [WebSocketConnectionManager]: WebSocket connection closed {"code":1006,"reason":""}
+2025-07-28 18:48:15 [WARN] [MessageSubscriberClient]: WebSocket connection lost
+2025-07-28 18:48:15 [INFO] [MessageSubscriberClient]: Handling connection loss, starting reconnection process...
+2025-07-28 18:48:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-28 18:48:15 [INFO] [WebSocketConnectionManager]: Scheduling reconnect attempt 1 in 5000ms
