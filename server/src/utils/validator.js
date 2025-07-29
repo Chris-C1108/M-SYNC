@@ -10,8 +10,8 @@ const MESSAGE_TYPES = ['TEXT', 'URL', 'CODE'];
 
 // 消息发布请求验证模式
 const messagePublishSchema = Joi.object({
-  token: Joi.string().required().length(128).hex()
-    .description('访问令牌'),
+  token: Joi.string().optional().length(128).hex()
+    .description('访问令牌（可选，也可通过Authorization头传递）'),
 
   messageType: Joi.string().valid(...MESSAGE_TYPES).required()
     .description('消息类型'),

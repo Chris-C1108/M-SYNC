@@ -3,129 +3,85 @@
  * 处理TEXT和CODE类型的消息，将内容复制到剪贴板
  */
 
-const ClipboardManager = require('../services/ClipboardManager');
-const SystemNotifier = require('../services/SystemNotifier');
-const logger = require('../utils/logger').createLogger('TextMessageHandler');
+const BaseMessageHandler = require('../utils/BaseMessageHandler');
+const ServiceManager = require('../utils/ServiceManager');
+const ContentValidator = require('../utils/ContentValidator');
 
-class TextMessageHandler {
+class TextMessageHandler extends BaseMessageHandler {
   constructor(config) {
-    this.config = config;
-    this.clipboardManager = null;
-    this.systemNotifier = null;
+    super(config, 'TextMessageHandler');
+    this.serviceManager = ServiceManager.getInstance(config);
+    this.contentValidator = new ContentValidator(config);
   }
 
-  async initialize() {
-    try {
-      logger.info('Initializing text message handler');
+  async doInitialize() {
+    // 初始化服务
+    const services = await this.serviceManager.initializeServices(['clipboard', 'systemNotifier']);
 
-      // 初始化剪贴板管理器
-      this.clipboardManager = new ClipboardManager(this.config);
-      await this.clipboardManager.initialize();
+    // 注册服务到基类
+    if (services.clipboard) {
+      this.registerService('clipboard', services.clipboard);
+    }
 
-      // 初始化系统通知器
-      if (this.config.get('systemIntegration.notifications.enabled')) {
-        this.systemNotifier = new SystemNotifier(this.config);
-        await this.systemNotifier.initialize();
-      }
-
-      logger.info('Text message handler initialized');
-
-    } catch (error) {
-      logger.error('Failed to initialize text message handler:', error);
-      throw error;
+    if (services.systemNotifier) {
+      this.registerService('systemNotifier', services.systemNotifier);
     }
   }
 
-  async process(message) {
-    try {
-      logger.info('Processing text message', {
-        messageId: message.messageId,
-        messageType: message.messageType,
-        contentLength: message.content.length
-      });
+  async doProcess(message) {
+    // 验证消息内容
+    const validationResult = this.validateContent(message.content, message.messageType);
+    if (!validationResult.isValid) {
+      throw new Error(`Content validation failed: ${validationResult.errors.join(', ')}`);
+    }
 
-      // 验证消息内容
-      if (!this.validateContent(message.content)) {
-        throw new Error('Invalid message content');
-      }
+    // 使用验证后的内容
+    const processedContent = validationResult.processedContent;
 
-      // 复制到剪贴板
-      await this.clipboardManager.writeText(message.content);
+    // 复制到剪贴板
+    await this.callService('clipboard', 'writeText', processedContent);
 
-      // 发送系统通知
-      if (this.systemNotifier) {
-        await this.sendNotification(message);
-      }
-
-      logger.info('Text message processed successfully', {
-        messageId: message.messageId,
-        messageType: message.messageType
-      });
-
-    } catch (error) {
-      logger.error('Failed to process text message:', {
-        messageId: message.messageId,
-        error: error.message
-      });
-      throw error;
+    // 异步发送系统通知，不阻塞主流程
+    const systemNotifier = this.getService('systemNotifier');
+    if (systemNotifier) {
+      this.sendNotificationAsync(message, processedContent);
     }
   }
 
-  validateContent(content) {
-    // 检查内容长度
-    if (!content || content.length === 0) {
-      logger.warn('Empty message content');
-      return false;
+  validateContent(content, messageType) {
+    // 根据消息类型选择验证方法
+    if (messageType === 'CODE') {
+      return this.contentValidator.validateCode(content);
+    } else {
+      return this.contentValidator.validateText(content);
     }
-
-    // 检查最大长度
-    const maxLength = this.config.get('security.maxMessageSize');
-    if (content.length > maxLength) {
-      logger.warn('Message content too long', {
-        length: content.length,
-        maxLength
-      });
-      return false;
-    }
-
-    return true;
   }
 
-  async sendNotification(message) {
+  sendNotificationAsync(message, processedContent) {
     try {
       const title = message.messageType === 'CODE' ? '代码已同步' : '文本已同步';
-      const body = this.truncateContent(message.content, 100);
+      const body = this.contentValidator.truncateContent(processedContent, 100);
 
-      await this.systemNotifier.notify({
-        title,
-        body: `内容已复制到剪贴板：${body}`,
-        icon: 'clipboard'
+      // 使用setImmediate确保通知发送不阻塞主流程
+      setImmediate(() => {
+        this.callService('systemNotifier', 'notify',
+          title,
+          `内容已复制到剪贴板：${body}`,
+          { icon: 'clipboard' }
+        ).catch(error => {
+          this.logger.warn('Async notification failed:', error);
+        });
       });
 
     } catch (error) {
-      logger.warn('Failed to send notification:', error);
-      // 通知失败不应该影响主要功能
+      this.logger.warn('Failed to setup async notification:', error);
     }
   }
 
-  truncateContent(content, maxLength) {
-    if (content.length <= maxLength) {
-      return content;
-    }
-    return content.substring(0, maxLength) + '...';
-  }
-
-  async cleanup() {
-    try {
-      if (this.clipboardManager) {
-        await this.clipboardManager.cleanup();
-      }
-      if (this.systemNotifier) {
-        await this.systemNotifier.cleanup();
-      }
-      logger.info('Text message handler cleaned up');
-    } catch (error) {
-      logger.error('Error cleaning up text message handler:', error);
+  async doCleanup() {
+    // 清理服务管理器
+    if (this.serviceManager) {
+      await this.serviceManager.cleanup();
     }
   }
 }

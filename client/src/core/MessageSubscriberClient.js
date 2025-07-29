@@ -185,8 +185,9 @@ class MessageSubscriberClient extends EventEmitter {
 
   parseMessage(rawMessage) {
     try {
-      const message = JSON.parse(rawMessage);
-      
+      // 如果rawMessage已经是对象，直接使用；否则解析JSON字符串
+      const message = typeof rawMessage === 'object' ? rawMessage : JSON.parse(rawMessage);
+
       // 检查消息类型
       if (message.type === 'pong') {
         logger.debug('Received pong message');
@@ -201,7 +202,11 @@ class MessageSubscriberClient extends EventEmitter {
       return message.data;
 
     } catch (error) {
-      logger.error('Failed to parse message:', error);
+      logger.error('Failed to parse message:', {
+        error: error.message,
+        rawMessage: rawMessage,
+        rawMessageType: typeof rawMessage
+      });
       return null;
     }
   }
@@ -404,7 +409,7 @@ class MessageSubscriberClient extends EventEmitter {
 
       if (token) {
         this.currentToken = token;
-        this.configManager.set('brokerService.authToken', token);
+        // 注意：不再将Token存储到配置中，由TokenManager管理
         this.lastTokenCheck = Date.now();
         logger.info('Valid token obtained successfully');
         return token;
@@ -416,7 +421,7 @@ class MessageSubscriberClient extends EventEmitter {
 
       if (token) {
         this.currentToken = token;
-        this.configManager.set('brokerService.authToken', token);
+        // 注意：不再将Token存储到配置中，由TokenManager管理
         this.lastTokenCheck = Date.now();
         logger.info('Token re-authentication successful');
         return token;
@@ -511,7 +516,7 @@ class MessageSubscriberClient extends EventEmitter {
 
       // 更新当前Token
       this.currentToken = newToken;
-      this.configManager.set('brokerService.authToken', newToken);
+      // 注意：不再将Token存储到配置中，由TokenManager管理
 
       // 如果连接存在，重新认证
       if (this.connectionManager && this.connectionManager.isConnected()) {

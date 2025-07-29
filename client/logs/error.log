@@ -1,239 +1,177 @@
-2025-07-28 17:11:46 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:14:15 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:15:48 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:18:06 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:22:41 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:26:23 [ERROR] [TokenManager]: Failed to store token:
-2025-07-28 17:27:59 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:38:40 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:38:41 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/SystemNotifier'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
-2025-07-28 17:38:41 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:38:41 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:38:53 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:38:53 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/SystemNotifier'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
-2025-07-28 17:38:53 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:38:53 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js","E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:39:45 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:39:45 [ERROR] [TextMessageHandler]: Failed to initialize text message handler:
-2025-07-28 17:39:45 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"this.systemNotifier.initialize is not a function"}
-2025-07-28 17:39:45 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry:
-2025-07-28 17:39:45 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
-2025-07-28 17:40:30 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:40:31 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"URL","handlerType":"browser","error":"Cannot find module './UrlMessageHandler'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"}
-2025-07-28 17:40:31 [ERROR] [MessageHandlerRegistry]: Failed to initialize message handler registry: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:40:31 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client: {"code":"MODULE_NOT_FOUND","requireStack":["E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js","E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js","E:\\coding\\M-SYNC\\client\\test-enhanced-client.js"]}
-2025-07-28 17:40:31 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:40:31 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:41:45 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:41:45 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
-2025-07-28 17:41:45 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:41:45 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:42:15 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:42:15 [ERROR] [MessageSubscriberClient]: Failed to start message subscriber client:
-2025-07-28 17:42:15 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:42:15 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:42:55 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:42:55 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:42:55 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 17:42:55 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 17:42:55 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 17:52:55 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 17:55:06 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:55:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:55:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:55:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:55:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:55:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:55:55 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:55:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:31 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:56:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:07 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:57:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:37 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:42 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:47 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:52 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:57:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:03 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:20 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:58:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:26 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:31 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:46 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:58:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:24 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 17:59:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 17:59:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:20 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:25 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:35 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:00:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:02 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:01:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:02:59 [ERROR] [AuthenticationFlow]: Failed to open browser:
-2025-07-28 18:05:08 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:05:09 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:14 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:19 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:39 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:44 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:49 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:05:54 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:06:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:06:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:06:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:06:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:07:36 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:07:36 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:07:41 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:07:46 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:07:51 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:07:56 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:08:01 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:08:06 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:08:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:08:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:09:24 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:12:34 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:12:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:12:39 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 18:12:43 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:12:43 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:12:47 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 18:12:54 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:12:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:19 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 18:13:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:13:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:13:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:14:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:14:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:14:10 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:14:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:14:20 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:16:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:16:57 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:02 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:20:02 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:07 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:12 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:17 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:22 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:27 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:32 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:37 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:20:42 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:04 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:21:04 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:09 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:14 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:19 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:24 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:29 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:34 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:21:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:23 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:31:23 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:23 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:28 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:28 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:30 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:31:30 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:33 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:33 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:34 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
-2025-07-28 18:31:35 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:35 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:40 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:40 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:45 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:45 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:50 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:50 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:31:55 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:31:55 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:00 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:32:00 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:05 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:32:05 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:11 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:32:11 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:16 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:32:16 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: WebSocket error:
-2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: WebSocket connection error:
-2025-07-28 18:32:21 [ERROR] [MessageSubscriberClient]: Reconnection failed:
-2025-07-28 18:32:21 [ERROR] [WebSocketConnectionManager]: Max reconnect attempts reached, giving up
-2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:34:35 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:35:58 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:36:57 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:40:51 [ERROR] [MessageSubscriberClient]: Failed to parse message:
-2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:43:39 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:47:42 [ERROR] [ConfigManager]: Failed to set config key 'brokerService.authToken':
-2025-07-28 18:48:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-29 11:47:22 [ERROR] [AuthenticationFlow]: Failed to open browser:
+2025-07-29 11:59:33 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-29 12:05:34 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-29 12:09:40 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-29 12:10:07 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-29 12:11:44 [ERROR] [MessageSubscriberClient]: Failed to parse message:
+2025-07-29 12:13:18 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-29 12:18:30 [ERROR] [MessageSubscriberClient]: Reconnection failed:
+2025-07-29 12:18:35 [ERROR] [WebSocketConnectionManager]: Failed to connect to WebSocket:
+2025-07-29 12:18:35 [ERROR] [WebSocketConnectionManager]: Reconnect attempt failed:
+2025-07-29 12:19:54 [ERROR] [TextMessageHandler]: Error cleaning up text message handler:
+2025-07-29 12:20:54 [ERROR] [MessageSubscriberClient]: Failed to parse message: {"error":"\"[object Object]\" is not valid JSON","rawMessage":{"messageId":"51993a4d-4dd9-45cf-a5b7-faf2ee49af6f","messageType":"TEXT","content":"测试消息005 - 观察消息解析错误","publishedAt":"2025-07-29T04:20:54.735Z","metadata":{}},"rawMessageType":"object"}
+2025-07-29 12:42:23 [ERROR] [UrlMessageHandler]: Failed to open URL in browser:
+2025-07-29 12:42:23 [ERROR] [UrlMessageHandler]: Failed to process URL message: {"messageId":"b0a420f0-951b-4395-b2a4-6a455d3a3406","error":"Cannot access 'process' before initialization"}
+2025-07-29 12:42:23 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"b0a420f0-951b-4395-b2a4-6a455d3a3406","error":"Cannot access 'process' before initialization"}
+2025-07-29 13:09:52 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:10:12 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:10:35 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:10:56 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:11:19 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:11:54 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:12:20 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:12:42 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:13:01 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Configuration property \"security.maxCodeSize\" is not defined"}
+2025-07-29 13:23:48 [ERROR] [ClipboardManager]: Failed to write text to clipboard: {"shortMessage":"Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","command":"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","escapedCommand":"\"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe\" --copy","exitCode":101,"stdout":"","stderr":"thread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","failed":true,"timedOut":false,"isCanceled":false,"killed":false}
+2025-07-29 13:23:48 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:23:48 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"97120bab-2252-437b-bf97-715abc571beb","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","handlerName":"TextMessageHandler"}
+2025-07-29 13:23:48 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"97120bab-2252-437b-bf97-715abc571beb","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace."}
+2025-07-29 13:23:57 [ERROR] [ClipboardManager]: Failed to write text to clipboard: {"shortMessage":"Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","command":"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","escapedCommand":"\"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe\" --copy","exitCode":101,"stdout":"","stderr":"thread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","failed":true,"timedOut":false,"isCanceled":false,"killed":false}
+2025-07-29 13:23:57 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:23:57 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"cbbd64ba-4116-48bd-81f4-ff9757872b6b","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","handlerName":"TextMessageHandler"}
+2025-07-29 13:23:57 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"cbbd64ba-4116-48bd-81f4-ff9757872b6b","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace."}
+2025-07-29 13:27:22 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:22 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:22 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:27:22 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:22 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:22 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:27:22 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:22 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:22 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"7937ccdb-2694-41ff-97fb-bf9edd823279","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:22 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"7937ccdb-2694-41ff-97fb-bf9edd823279","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:22 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:22 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:22 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"ab428644-9337-4436-8036-3585dbe71408","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:22 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"ab428644-9337-4436-8036-3585dbe71408","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:56 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:56 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:56 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:27:56 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:56 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:56 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:27:57 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:57 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:57 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"2eab83a5-fcc9-40af-bfce-1e5ff30ff9c8","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:57 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"2eab83a5-fcc9-40af-bfce-1e5ff30ff9c8","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:57 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:57 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:57 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"6e35a2f9-e9a3-4bb4-9ce7-a99f355cd456","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:57 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"6e35a2f9-e9a3-4bb4-9ce7-a99f355cd456","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"cdc97a04-8e88-4179-962f-ac336830113d","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"cdc97a04-8e88-4179-962f-ac336830113d","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"148984cb-4045-455e-a217-f658024d45af","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"148984cb-4045-455e-a217-f658024d45af","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"5933d8ab-f197-4695-8d05-66b710c867e7","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"5933d8ab-f197-4695-8d05-66b710c867e7","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"ba7f18fe-58da-4963-85c2-d70c0c7e8f25","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"ba7f18fe-58da-4963-85c2-d70c0c7e8f25","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"f8c0f7d7-dd62-4eb9-8a11-eee720867b7b","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"f8c0f7d7-dd62-4eb9-8a11-eee720867b7b","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:27:59 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:27:59 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"4ac782f2-87bf-48b0-ac99-e1d6bd82bdd2","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:27:59 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"4ac782f2-87bf-48b0-ac99-e1d6bd82bdd2","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:28:40 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:40 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:40 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:28:41 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:41 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:41 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:28:41 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:41 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:41 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:28:41 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:41 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:41 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"cab2310b-081c-4018-92cf-c9b0360227c9","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:28:41 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"cab2310b-081c-4018-92cf-c9b0360227c9","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:28:42 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:42 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:42 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"94bd5ef0-1659-45f5-9e2f-10d219a39e67","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:28:42 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"94bd5ef0-1659-45f5-9e2f-10d219a39e67","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:28:43 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"fde7a58d-9f80-4652-80a5-4cd444af9a55","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:28:43 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"fde7a58d-9f80-4652-80a5-4cd444af9a55","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:28:43 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"2b86b086-d6d6-4b76-a93f-f7f8746eb9c0","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:28:43 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"2b86b086-d6d6-4b76-a93f-f7f8746eb9c0","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:28:43 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:28:43 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"a460a391-e867-4ee3-bc18-e82d79c9682b","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:28:43 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"a460a391-e867-4ee3-bc18-e82d79c9682b","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:36:09 [ERROR] [ClipboardManager]: Failed to write text to clipboard:
+2025-07-29 13:36:09 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:36:09 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"66f2d85b-46bc-462a-8730-807df0c42448","error":"Clipboard write failed: Clipboard write timeout","handlerName":"TextMessageHandler"}
+2025-07-29 13:36:09 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"66f2d85b-46bc-462a-8730-807df0c42448","error":"Clipboard write failed: Clipboard write timeout"}
+2025-07-29 13:36:11 [ERROR] [ClipboardManager]: Failed to write text to clipboard: {"shortMessage":"Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","command":"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy","escapedCommand":"\"E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe\" --copy","exitCode":101,"stdout":"","stderr":"thread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","failed":true,"timedOut":false,"isCanceled":false,"killed":false}
+2025-07-29 13:36:11 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:36:11 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"5f67542f-f4ad-41b7-a726-e09dc5ed749a","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace.","handlerName":"TextMessageHandler"}
+2025-07-29 13:36:11 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"5f67542f-f4ad-41b7-a726-e09dc5ed749a","error":"Clipboard write failed: Command failed with exit code 101: E:\\coding\\M-SYNC\\client\\node_modules\\clipboardy\\fallbacks\\windows\\clipboard_x86_64.exe --copy\nthread 'main' panicked at 'Error: Could not copy to clipboard: Error { repr: Os { code: 5, message: \"拒绝访问。\" } }', src\\libcore\\result.rs:906:4\nnote: Run with `RUST_BACKTRACE=1` for a backtrace."}
+2025-07-29 13:43:31 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:31 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"b9bb23ee-c37f-4267-88fa-2566cf4cd1ae","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:31 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"b9bb23ee-c37f-4267-88fa-2566cf4cd1ae","error":"Clipboard is not available"}
+2025-07-29 13:43:32 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:32 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"93012968-881e-4e54-bbe2-d623de90a355","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:32 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"93012968-881e-4e54-bbe2-d623de90a355","error":"Clipboard is not available"}
+2025-07-29 13:43:33 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:33 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:43:34 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:34 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"9c2ddb96-cc1d-46a3-a21a-ad669f3294d3","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:34 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"9c2ddb96-cc1d-46a3-a21a-ad669f3294d3","error":"Clipboard is not available"}
+2025-07-29 13:43:35 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:35 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [UrlMessageHandler]: Clipboard write failed:
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"f065d5f7-6cb2-4b05-86a6-b74e69813b9b","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:37 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"f065d5f7-6cb2-4b05-86a6-b74e69813b9b","error":"Clipboard is not available"}
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"fe046805-3446-4697-ba62-710c54ba208a","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:37 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"fe046805-3446-4697-ba62-710c54ba208a","error":"Clipboard is not available"}
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:37 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"d4df074c-6b21-4900-897b-d6bf1ceb7564","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:37 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"d4df074c-6b21-4900-897b-d6bf1ceb7564","error":"Clipboard is not available"}
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"dc6c182f-1193-41be-bdcc-1ced260d93d7","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:38 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"dc6c182f-1193-41be-bdcc-1ced260d93d7","error":"Clipboard is not available"}
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"2808ab7e-bdda-4e60-a5e7-f1f5900a26ec","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:38 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"2808ab7e-bdda-4e60-a5e7-f1f5900a26ec","error":"Clipboard is not available"}
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"a2e0e897-7e0b-4767-9e83-6543df9d5461","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:38 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"a2e0e897-7e0b-4767-9e83-6543df9d5461","error":"Clipboard is not available"}
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:38 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"ae1df0fb-9040-4068-8931-07c4a247247f","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:38 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"ae1df0fb-9040-4068-8931-07c4a247247f","error":"Clipboard is not available"}
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"5bc7bb63-4e17-4007-a75c-ed12301b346b","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:39 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"5bc7bb63-4e17-4007-a75c-ed12301b346b","error":"Clipboard is not available"}
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"2423aae1-02a0-40de-99d5-e49e4a2d3442","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:39 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"2423aae1-02a0-40de-99d5-e49e4a2d3442","error":"Clipboard is not available"}
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Service call failed: clipboard.writeText
+2025-07-29 13:43:39 [ERROR] [TextMessageHandler]: Failed to process message: {"messageId":"571359f2-677c-4556-979d-9d7d2f87d89d","error":"Clipboard is not available","handlerName":"TextMessageHandler"}
+2025-07-29 13:43:39 [ERROR] [MessageSubscriberClient]: Error processing message: {"messageId":"571359f2-677c-4556-979d-9d7d2f87d89d","error":"Clipboard is not available"}
+2025-07-29 13:45:06 [ERROR] [ClipboardManager]: Failed to initialize clipboard manager:
+2025-07-29 14:13:02 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/ServiceManager'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\utils\\BaseMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\src\\index.js"}
+2025-07-29 14:13:22 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/ServiceManager'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\utils\\BaseMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\src\\index.js"}
+2025-07-29 14:13:36 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/ServiceManager'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\utils\\BaseMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\src\\index.js"}
+2025-07-29 14:13:48 [ERROR] [MessageHandlerRegistry]: Failed to register handler: {"messageType":"TEXT","handlerType":"clipboard","error":"Cannot find module '../services/ServiceManager'\nRequire stack:\n- E:\\coding\\M-SYNC\\client\\src\\utils\\BaseMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\TextMessageHandler.js\n- E:\\coding\\M-SYNC\\client\\src\\handlers\\MessageHandlerRegistry.js\n- E:\\coding\\M-SYNC\\client\\src\\core\\MessageSubscriberClient.js\n- E:\\coding\\M-SYNC\\client\\src\\index.js"}
+2025-07-29 14:14:45 [ERROR] [TextMessageHandler]: Failed to initialize TextMessageHandler:
+2025-07-29 14:18:15 [ERROR] [MessageSubscriberClient]: Reconnection failed:

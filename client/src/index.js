@@ -22,6 +22,10 @@ class DesktopSubscriberApp {
     this.systemTray = null;
     this.isShuttingDown = false;
     this.isTrayMode = process.argv.includes('--tray') || process.env.MSYNC_TRAY_MODE === 'true';
+
+    // 系统功能状态
+    this.clipboardEnabled = true;
+    this.browserEnabled = true;
   }
 
   async initialize() {
@@ -81,16 +85,14 @@ class DesktopSubscriberApp {
   }
 
   async validateConfiguration() {
-    const authToken = config.get('brokerService.authToken');
     const wsEndpoint = config.get('brokerService.wsEndpoint');
-
-    if (!authToken) {
-      throw new Error('Authentication token is required. Please configure MSYNC_SUBSCRIBER_AUTH_TOKEN or update config file.');
-    }
 
     if (!wsEndpoint) {
       throw new Error('WebSocket endpoint is required. Please configure MSYNC_SUBSCRIBER_WS_ENDPOINT or update config file.');
     }
+
+    // 注意：authToken由TokenManager动态管理，不需要在启动时验证
+    logger.info('Basic configuration validated');
 
     // 验证系统兼容性
     const systemInfo = await getSystemInfo();
@@ -99,12 +101,18 @@ class DesktopSubscriberApp {
     // 检查必要的系统功能
     if (config.get('systemIntegration.clipboard.enabled')) {
       try {
-        const clipboardy = require('clipboardy');
-        await clipboardy.read();
-        logger.info('Clipboard access verified');
+        const clipboardy = require('clipboardy').default || require('clipboardy');
+        // 测试clipboardy是否可用
+        if (typeof clipboardy.readSync === 'function') {
+          clipboardy.readSync();
+          logger.info('Clipboard access verified');
+        } else {
+          throw new Error('clipboardy module not properly loaded');
+        }
       } catch (error) {
         logger.warn('Clipboard access failed, disabling clipboard integration', error);
-        config.systemIntegration.clipboard.enabled = false;
+        // 注意：不能直接修改config对象，这里只是记录状态
+        this.clipboardEnabled = false;
       }
     }
 
@@ -114,7 +122,8 @@ class DesktopSubscriberApp {
         logger.info('Browser launcher verified');
       } catch (error) {
         logger.warn('Browser launcher failed, disabling browser integration', error);
-        config.systemIntegration.browser.enabled = false;
+        // 注意：不能直接修改config对象，这里只是记录状态
+        this.browserEnabled = false;
       }
     }
   }

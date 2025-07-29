@@ -1,0 +1,27 @@
+{
+  "brokerService": {
+    "wsEndpoint": "ws://localhost:8080",
+    "reconnectInterval": 1000,
+    "heartbeatInterval": 5000,
+    "maxReconnectAttempts": 3
+  },
+  "tokenManager": {
+    "serverUrl": "http://localhost:3000",
+    "username": "testuser",
+    "password": "testpass",
+    "tokenFile": "config/test-token.json"
+  },
+  "messageHandlers": {
+    "enableClipboard": false,
+    "enableBrowser": false,
+    "enableNotifications": false
+  },
+  "logging": {
+    "level": "error",
+    "file": "logs/test.log",
+    "console": false
+  },
+  "systemTray": {
+    "enabled": false
+  }
+}

@@ -27,12 +27,12 @@ class WebSocketConnectionManager extends EventEmitter {
     try {
       const wsEndpoint = this.config.get('brokerService.wsEndpoint');
 
-      // 优先使用传入的Token，否则从配置获取
-      const token = authToken || this.config.get('brokerService.authToken');
-
-      if (!token) {
-        throw new Error('No authentication token available');
+      // 必须提供authToken，不再从配置获取
+      if (!authToken) {
+        throw new Error('Authentication token is required for WebSocket connection');
       }
+
+      const token = authToken;
 
       // 在URL中包含Token进行认证
       const wsUrl = `${wsEndpoint}?token=${encodeURIComponent(token)}`;
@@ -111,7 +111,7 @@ class WebSocketConnectionManager extends EventEmitter {
         break;
 
       case 'message':
-        this.emit('message', message.data);
+        this.emit('message', message);
         break;
 
       case 'pong':

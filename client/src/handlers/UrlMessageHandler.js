@@ -3,134 +3,109 @@
  * 负责处理URL类型的消息
  */
 
-const { spawn } = require('child_process');
-const SystemNotifier = require('../services/SystemNotifier');
-const logger = require('../utils/logger').createLogger('UrlMessageHandler');
+const BaseMessageHandler = require('../utils/BaseMessageHandler');
+const ServiceManager = require('../utils/ServiceManager');
+const ContentValidator = require('../utils/ContentValidator');
+const SystemUtils = require('../utils/SystemUtils');
 
-class UrlMessageHandler {
+class UrlMessageHandler extends BaseMessageHandler {
   constructor(config) {
-    this.config = config;
-    this.systemNotifier = null;
-    this.browserCommand = this.getBrowserCommand();
+    super(config, 'UrlMessageHandler');
+    this.serviceManager = ServiceManager.getInstance(config);
+    this.contentValidator = new ContentValidator(config);
+    this.systemUtils = new SystemUtils();
   }
 
-  async initialize() {
-    try {
-      logger.info('Initializing URL message handler');
+  async doInitialize() {
+    // 初始化服务
+    const services = await this.serviceManager.initializeServices(['clipboard', 'systemNotifier']);
 
-      // 初始化系统通知器
-      if (this.config.get('systemIntegration.notifications.enabled')) {
-        this.systemNotifier = new SystemNotifier(this.config);
-        await this.systemNotifier.initialize();
-      }
+    // 注册服务到基类
+    if (services.clipboard) {
+      this.registerService('clipboard', services.clipboard);
+    }
 
-      logger.info('URL message handler initialized');
-
-    } catch (error) {
-      logger.error('Failed to initialize URL message handler:', error);
-      throw error;
+    if (services.systemNotifier) {
+      this.registerService('systemNotifier', services.systemNotifier);
     }
   }
 
-  async process(message) {
+  async doProcess(message) {
+    // 验证URL格式
+    const validationResult = this.contentValidator.validateUrl(message.content);
+    if (!validationResult.isValid) {
+      throw new Error(`URL validation failed: ${validationResult.errors.join(', ')}`);
+    }
+
+    const normalizedUrl = validationResult.normalizedUrl;
+
+    // 并行执行所有操作以提高性能
+    const operations = [];
+
+    // 1. 复制URL到剪贴板（快速操作）
+    const clipboardService = this.getService('clipboard');
+    if (clipboardService) {
+      operations.push(
+        this.callService('clipboard', 'writeText', normalizedUrl)
+          .then(() => this.logger.debug('Clipboard write completed'))
+          .catch(err => this.logger.error('Clipboard write failed:', err))
+      );
+    }
+
+    // 2. 立即启动浏览器（不等待通知完成）
+    operations.push(
+      this.systemUtils.openInBrowser(normalizedUrl)
+        .then(() => this.logger.debug('Browser launch completed'))
+        .catch(err => this.logger.error('Browser launch failed:', err))
+    );
+
+    // 3. 异步发送通知（不阻塞其他操作）
+    const systemNotifier = this.getService('systemNotifier');
+    if (systemNotifier) {
+      operations.push(
+        this.sendNotificationAsync(normalizedUrl)
+          .then(() => this.logger.debug('Notification sent completed'))
+          .catch(err => this.logger.error('Notification failed:', err))
+      );
+    }
+
+    // 等待所有操作完成
+    await Promise.allSettled(operations);
+  }
+
+  /**
+   * 异步发送通知，不阻塞其他操作
+   */
+  async sendNotificationAsync(url) {
     try {
-      logger.info('Processing URL message', {
-        messageId: message.messageId,
-        url: message.content
+      // 使用setImmediate确保通知发送不阻塞主流程
+      setImmediate(() => {
+        // 完全异步执行，不等待结果
+        this.callService('systemNotifier', 'notify',
+          'M-SYNC - URL消息',
+          `收到新的URL: ${url}`,
+          {
+            icon: 'browser',
+            url: url
+          }
+        ).catch(error => {
+          this.logger.error('Async notification failed:', error);
+        });
       });
 
-      // 验证URL格式
-      if (!this.isValidUrl(message.content)) {
-        logger.warn('Invalid URL format:', message.content);
-        return;
-      }
-
-      // 发送通知
-      if (this.systemNotifier) {
-        await this.systemNotifier.notifyUrlMessage(message.content);
-      }
-
-      // 在浏览器中打开URL
-      await this.openInBrowser(message.content);
-
-      logger.info('URL message processed successfully', {
-        messageId: message.messageId,
-        url: message.content
-      });
-
+      // 立即返回，不等待通知完成
+      return Promise.resolve();
     } catch (error) {
-      logger.error('Failed to process URL message:', {
-        messageId: message.messageId,
-        error: error.message
-      });
-      throw error;
+      this.logger.error('Failed to setup async notification:', error);
+      return Promise.resolve();
     }
   }
 
-  async openInBrowser(url) {
-    try {
-      logger.info('Opening URL in browser:', url);
-
-      // 在控制台显示（简单实现）
-      console.log(`\n🌐 Opening URL in browser: ${url}`);
-
-      // 在实际实现中，这里会调用系统默认浏览器
-      // const process = spawn(this.browserCommand, [url], { detached: true });
-      // process.unref();
-
-      return true;
-    } catch (error) {
-      logger.error('Failed to open URL in browser:', error);
-      throw error;
+  async doCleanup() {
+    // 清理服务管理器
+    if (this.serviceManager) {
+      await this.serviceManager.cleanup();
     }
-  }
-
-  isValidUrl(string) {
-    try {
-      new URL(string);
-      return true;
-    } catch (_) {
-      return false;
-    }
-  }
-
-  getBrowserCommand() {
-    const platform = process.platform;
-    
-    switch (platform) {
-      case 'win32':
-        return 'start';
-      case 'darwin':
-        return 'open';
-      case 'linux':
-        return 'xdg-open';
-      default:
-        return 'xdg-open';
-    }
-  }
-
-  async cleanup() {
-    try {
-      logger.info('Cleaning up URL message handler');
-      
-      // 清理系统通知器
-      if (this.systemNotifier) {
-        // SystemNotifier 没有cleanup方法，所以只是置空
-        this.systemNotifier = null;
-      }
-
-      logger.info('URL message handler cleaned up');
-    } catch (error) {
-      logger.error('Error cleaning up URL message handler:', error);
-    }
-  }
-
-  getStats() {
-    return {
-      handlerType: 'UrlMessageHandler',
-      browserCommand: this.browserCommand,
-      notificationsEnabled: !!this.systemNotifier
-    };
   }
 }
 

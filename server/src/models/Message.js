@@ -207,7 +207,7 @@ class Message {
   /**
    * 检查重复消息
    */
-  static async isDuplicate(userId, contentHash, timeWindow = 300) {
+  static async isDuplicate(userId, contentHash, timeWindow = 5) {
     try {
       const db = Message.getDatabase();
       const cutoffTime = new Date(Date.now() - timeWindow * 1000).toISOString();

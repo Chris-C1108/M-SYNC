@@ -4,94 +4,390 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-SYNC 管理中心</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header-content">
-                <h1><i class="fas fa-sync-alt"></i> M-SYNC 管理中心</h1>
-                <p class="subtitle">跨设备消息同步服务</p>
-            </div>
-        </header>
 
-        <main class="main-content">
+    <!-- ======================= 1. 持久化页头 ======================= -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="logo"><i class="fas fa-sync-alt"></i> M-SYNC</h1>
+            <p class="subtitle">跨设备消息同步服务</p>
+        </div>
+        <nav id="main-nav" class="main-nav">
+            <!-- 导航链接由JS动态生成 -->
+        </nav>
+    </header>
+
+    <!-- ======================= 2. 页面容器 ======================= -->
+    <main class="container">
+        
+        <!-- 主页 Section (默认显示) -->
+        <section id="page-home" class="page active">
             <div class="welcome-section">
                 <div class="card">
-                    <h2><i class="fas fa-home"></i> 欢迎使用 M-SYNC</h2>
+                    <h2 id="welcome-banner"><i class="fas fa-home"></i> 欢迎使用 M-SYNC</h2>
                     <p>M-SYNC 是一个强大的跨设备消息同步服务，支持桌面客户端、iOS快捷指令等多种接入方式。</p>
-                    
-                    <div class="action-buttons">
-                        <a href="/pages/login.html" class="btn btn-primary">
-                            <i class="fas fa-sign-in-alt"></i> 登录
-                        </a>
-                        <a href="/pages/register.html" class="btn btn-secondary">
-                            <i class="fas fa-user-plus"></i> 注册
-                        </a>
-                        <a href="/pages/tokens.html" class="btn btn-secondary">
-                            <i class="fas fa-key"></i> Token管理
-                        </a>
-                    </div>
                 </div>
             </div>
-
-            <div class="features-section">
-                <h3><i class="fas fa-star"></i> 主要功能</h3>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-desktop"></i>
-                        <h4>桌面客户端</h4>
-                        <p>支持Windows、macOS、Linux系统托盘运行</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h4>iOS快捷指令</h4>
-                        <p>通过iOS快捷指令快速发送消息到其他设备</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-key"></i>
-                        <h4>Token管理</h4>
-                        <p>安全的访问令牌管理，支持多设备独立认证</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-bolt"></i>
-                        <h4>实时同步</h4>
-                        <p>基于WebSocket的实时消息推送</p>
-                    </div>
+            
+            <div class="feature-cards">
+                <div class="feature-card" data-target="page-tokens">
+                    <div class="icon"><i class="fas fa-key"></i></div>
+                    <h3>Token 管理</h3>
+                    <p>管理您的应用访问凭证，确保服务安全。</p>
+                </div>
+                <div class="feature-card" data-target="page-download">
+                    <div class="icon"><i class="fas fa-download"></i></div>
+                    <h3>下载客户端</h3>
+                    <p>获取适用于您操作系统的桌面客户端。</p>
+                </div>
+                <div class="feature-card" data-target="page-tokens">
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>iOS快捷指令</h3>
+                    <p>快速配置您的移动设备，实现自动化。</p>
+                </div>
+                <div class="feature-card" onclick="window.open('/api', '_blank')">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>API 文档</h3>
+                    <p>查看详细的API接口文档，进行二次开发。</p>
                 </div>
             </div>
-
+            
             <div class="status-section">
                 <div class="card">
-                    <h3><i class="fas fa-heartbeat"></i> 服务状态</h3>
+                    <h3><i class="fas fa-server"></i> 服务状态</h3>
                     <div class="status-grid">
                         <div class="status-item">
                             <span class="status-label">服务状态:</span>
-                            <span class="status-value" id="service-status">检查中...</span>
+                            <span class="status-value" id="service-status">运行中</span>
                         </div>
                         <div class="status-item">
                             <span class="status-label">数据库:</span>
-                            <span class="status-value" id="database-status">检查中...</span>
+                            <span class="status-value" id="database-status">已连接</span>
                         </div>
                         <div class="status-item">
                             <span class="status-label">WebSocket:</span>
-                            <span class="status-value" id="websocket-status">检查中...</span>
+                            <span class="status-value" id="websocket-status">运行中</span>
                         </div>
                         <div class="status-item">
                             <span class="status-label">版本:</span>
-                            <span class="status-value" id="version">1.0.0</span>
+                            <span class="status-value" id="version-info">1.0.0</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </section>
 
-        <footer class="footer">
-            <p>&copy; 2025 M-SYNC. All rights reserved.</p>
-        </footer>
+        <!-- Token管理 Section -->
+        <section id="page-tokens" class="page">
+            <div class="card">
+                <div class="card-header">
+                    <div class="header-left">
+                        <h2><i class="fas fa-key"></i> Token 管理</h2>
+                        <div id="user-info" class="user-info">
+                            <!-- 用户信息由JS动态填充 -->
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <button class="btn btn-primary" id="btn-show-create-token-modal">
+                            <i class="fas fa-plus"></i> 创建新Token
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="token-controls">
+                    <div class="search-filter-section">
+                        <input type="search" id="token-search" placeholder="按Token名称搜索..." class="search-input">
+                        <select id="token-status-filter" class="filter-select">
+                            <option value="">所有状态</option>
+                            <option value="active">活跃</option>
+                            <option value="revoked">已撤销</option>
+                        </select>
+                        <select id="token-device-filter" class="filter-select">
+                            <option value="">所有设备类型</option>
+                            <option value="desktop">桌面客户端</option>
+                            <option value="ios_shortcuts">iOS快捷指令</option>
+                            <option value="web">Web应用</option>
+                            <option value="mobile">移动应用</option>
+                            <option value="api">API调用</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="token-table-container">
+                    <table class="data-table" id="token-table">
+                        <thead>
+                            <tr>
+                                <th>Token名称</th>
+                                <th>设备类型</th>
+                                <th>权限</th>
+                                <th>创建时间</th>
+                                <th>最后使用</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="token-table-body">
+                            <!-- Token数据由JS动态填充 -->
+                            <tr><td colspan="6" class="loading-cell">加载中...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="pagination-section" id="token-pagination">
+                    <!-- 分页控件由JS动态生成 -->
+                </div>
+            </div>
+
+            <!-- iOS快捷指令配置指南 -->
+            <div class="card ios-guide-section">
+                <h3><i class="fas fa-mobile-alt"></i> iOS快捷指令配置指南</h3>
+                <div class="guide-content">
+                    <p>按照以下步骤在iOS快捷指令中配置M-SYNC：</p>
+                    <ol>
+                        <li>创建一个"iOS快捷指令"类型的Token</li>
+                        <li>复制生成的Token</li>
+                        <li>在iOS设备上打开"快捷指令"应用</li>
+                        <li>创建新的快捷指令，添加"获取网页内容"操作</li>
+                        <li>配置以下参数：</li>
+                    </ol>
+                    <div class="config-example">
+                        <h4>快捷指令配置：</h4>
+                        <pre id="ios-config-template">URL: http://localhost:3000/api/v1/messages/publish
+方法: POST
+请求体: JSON
+{
+  "token": "您的Token",
+  "messageType": "TEXT",
+  "content": "剪贴板内容或输入文本"
+}</pre>
+                        <button class="btn btn-secondary" id="btn-copy-ios-config">
+                            <i class="fas fa-copy"></i> 复制配置
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下载客户端 Section -->
+        <section id="page-download" class="page">
+            <div class="card">
+                <h2><i class="fas fa-download"></i> 下载M-SYNC客户端</h2>
+                <p>选择适合您操作系统的客户端版本：</p>
+                
+                <div class="download-cards">
+                    <div class="download-card recommended">
+                        <div class="platform-icon"><i class="fab fa-windows"></i></div>
+                        <h3>Windows</h3>
+                        <p>支持 Windows 10/11</p>
+                        <div class="download-info">
+                            <button class="btn btn-primary download-btn">
+                                <i class="fas fa-download"></i> 下载 Windows 版
+                            </button>
+                            <small>版本 1.0.0 | 约 50MB</small>
+                        </div>
+                        <div class="recommended-badge">推荐</div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="platform-icon"><i class="fab fa-apple"></i></div>
+                        <h3>macOS</h3>
+                        <p>支持 macOS 10.15+</p>
+                        <div class="download-info">
+                            <button class="btn btn-primary download-btn">
+                                <i class="fas fa-download"></i> 下载 macOS 版
+                            </button>
+                            <small>版本 1.0.0 | 约 45MB</small>
+                        </div>
+                    </div>
+                    
+                    <div class="download-card">
+                        <div class="platform-icon"><i class="fab fa-linux"></i></div>
+                        <h3>Linux</h3>
+                        <p>支持主流 Linux 发行版</p>
+                        <div class="download-info">
+                            <button class="btn btn-primary download-btn">
+                                <i class="fas fa-download"></i> 下载 Linux 版
+                            </button>
+                            <small>版本 1.0.0 | 约 40MB</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======================= 3. 全局模态框 ======================= -->
+
+    <!-- 登录/注册模态框 -->
+    <div id="modal-auth" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-id="modal-auth">&times;</span>
+            
+            <!-- 登录表单 -->
+            <div id="login-view">
+                <div class="modal-header">
+                    <i class="fas fa-sign-in-alt"></i> 登录 M-SYNC
+                </div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-username">用户名</label>
+                        <input type="text" id="login-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">密码</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="login-remember" name="remember">
+                            <span class="checkmark"></span>
+                            记住我
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" id="show-register-view">还没有账户？立即注册</a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt"></i> 登录
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- 注册表单 -->
+            <div id="register-view" style="display:none;">
+                <div class="modal-header">
+                    <i class="fas fa-user-plus"></i> 创建新账户
+                </div>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">用户名</label>
+                        <input type="text" id="register-username" name="username" required>
+                        <small>用户名只能包含字母、数字和下划线</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">邮箱地址</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">密码</label>
+                        <input type="password" id="register-password" name="password" required>
+                        <small>密码应包含字母、数字和特殊字符</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">确认密码</label>
+                        <input type="password" id="register-confirm-password" name="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="register-agree" name="agree" required>
+                            <span class="checkmark"></span>
+                            我同意 <a href="#" target="_blank">服务条款</a> 和 <a href="#" target="_blank">隐私政策</a>
+                        </label>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" id="show-login-view">已有账户？立即登录</a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i> 注册账户
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <script src="/js/main.js"></script>
+    <!-- 创建新Token模态框 -->
+    <div id="modal-create-token" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-id="modal-create-token">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-plus"></i> 创建新 Token
+            </div>
+            <form id="create-token-form">
+                <div class="form-group">
+                    <label for="token-name">Token名称</label>
+                    <input type="text" id="token-name" name="tokenName" required>
+                </div>
+                <div class="form-group">
+                    <label for="token-device-type">设备类型</label>
+                    <select id="token-device-type" name="deviceType" required>
+                        <option value="">请选择设备类型</option>
+                        <option value="desktop">桌面客户端</option>
+                        <option value="ios_shortcuts">iOS快捷指令</option>
+                        <option value="mobile">移动应用</option>
+                        <option value="web">Web应用</option>
+                        <option value="api">API调用</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>权限设置</label>
+                    <div class="permission-checkboxes">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="permissions" value="message:publish" checked>
+                            <span class="checkmark"></span>
+                            发布消息
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="permissions" value="message:read" checked>
+                            <span class="checkmark"></span>
+                            读取消息
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-modal-close="modal-create-token">取消</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> 创建Token
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 确认撤销模态框 -->
+    <div id="modal-confirm-revoke" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-id="modal-confirm-revoke">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-exclamation-triangle"></i> 确认操作
+            </div>
+            <div class="modal-body">
+                <p>您确定要撤销这个Token吗？</p>
+                <p><strong>此操作不可恢复，撤销后该Token将立即失效。</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-modal-close="modal-confirm-revoke">取消</button>
+                <button type="button" class="btn btn-danger" id="btn-confirm-revoke">
+                    <i class="fas fa-trash"></i> 确认撤销
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Token详情模态框 -->
+    <div id="modal-token-details" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" data-modal-id="modal-token-details">&times;</span>
+            <div class="modal-header">
+                <i class="fas fa-info-circle"></i> Token详情
+            </div>
+            <div class="modal-body" id="token-details-content">
+                <!-- Token详情内容由JS动态填充 -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-modal-close="modal-token-details">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= 4. 页脚 ======================= -->
+    <footer class="main-footer">
+        <p>&copy; 2025 M-SYNC. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -4,6 +4,8 @@
  */
 
 const logger = require('../utils/logger').createLogger('SystemNotifier');
+const notifier = require('node-notifier');
+const path = require('path');
 
 class SystemNotifier {
   constructor(config = {}) {
@@ -49,22 +51,57 @@ class SystemNotifier {
 
       logger.info('Sending notification', { title, message });
 
-      // 在控制台显示通知（简单实现）
+      // 在控制台显示通知（用于调试）
       console.log(`\n🔔 ${title}`);
       console.log(`   ${message}`);
-      
+
       if (options.url) {
         console.log(`   🔗 ${options.url}`);
       }
 
-      // 在实际实现中，这里会调用系统通知API
-      // 例如：Windows Toast通知、macOS通知中心、Linux桌面通知等
-      
+      // 发送真正的系统通知
+      const notificationOptions = {
+        title: title,
+        message: message,
+        sound: this.sound,
+        timeout: this.timeout / 1000, // node-notifier使用秒为单位
+        icon: this.getIconPath(options.icon),
+        wait: false // 不等待用户交互
+      };
+
+      // 如果是URL消息，添加点击操作
+      if (options.url) {
+        notificationOptions.open = options.url;
+      }
+
+      // 使用非阻塞方式发送通知
+      notifier.notify(notificationOptions, (err, response) => {
+        if (err) {
+          logger.error('System notification failed:', err);
+        } else {
+          logger.debug('System notification sent successfully:', response);
+        }
+      });
+
       return true;
     } catch (error) {
       logger.error('Failed to send notification:', error);
       return false;
     }
+  }
+
+  /**
+   * 获取图标路径
+   */
+  getIconPath(iconType) {
+    // 使用默认的系统图标或自定义图标
+    const iconMap = {
+      'clipboard': null, // 使用默认图标
+      'browser': null,   // 使用默认图标
+      'info': null       // 使用默认图标
+    };
+
+    return iconMap[iconType] || null;
   }
 
   /**
